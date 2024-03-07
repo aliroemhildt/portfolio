@@ -1,0 +1,15 @@
+@use './mixins';
+@use './variables';
+@use './reset';
+
+body {
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  border: 1px red solid;
+  height: 100%;
+  width: 100%;
+}
