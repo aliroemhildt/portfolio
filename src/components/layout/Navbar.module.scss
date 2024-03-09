@@ -1,3 +1,14 @@
+@use '../../styles/fonts';
+
 .navbar {
   border: 1px yellow solid;
+  flex-grow: 0;
+}
+
+.active {
+
+}
+
+.not-active {
+
 }

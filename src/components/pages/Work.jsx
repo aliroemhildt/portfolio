@@ -6,7 +6,7 @@ export default function Work() {
   return (
     <Layout>
       <div className={styles.work}>
-        Work Page
+        <h1 className={styles.title}>Ali Roemhildt</h1>
       </div>
     </Layout>
   )
