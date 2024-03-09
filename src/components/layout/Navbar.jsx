@@ -1,27 +1,46 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.scss';
+import logo from '../../assets/logo.svg';
 
 export default function Navbar() {
   return (
-    <nav className={styles.navbar}>
-      <ul>
+    <nav className={styles['nav-container']}>
+      <NavLink to='/'>
+        <img className={styles.logo} src={logo} alt='logo' />
+      </NavLink>
+      <ul className={styles['nav-list']}>
         <li>
           <NavLink
             to='/'
-            className={({ isActive}) => isActive ? 'active' : 'not-active'}
+            className={({isActive}) => isActive ? `${styles.active}` : ''}
           >
               Work
           </NavLink>
         </li>
         <li>
-          <NavLink to='/about'>About</NavLink>
+          <NavLink
+            to='/about'
+            className={({ isActive }) => isActive ? `${styles.active}` : ''}
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/resume'>Resume</NavLink>
+          <NavLink
+            to='/resume'
+            className={({ isActive }) => isActive ? `${styles.active}` : ''}
+          >
+            Resume
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/contact'>Contact</NavLink>
+          <NavLink
+            to='/contact'
+            className={({ isActive }) => isActive ? `${styles.active}` : ''}
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>

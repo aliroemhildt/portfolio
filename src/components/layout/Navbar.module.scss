@@ -1,14 +1,36 @@
 @use '../../styles/fonts';
+@use '../../styles/colors';
 
-.navbar {
+.nav-container {
   border: 1px yellow solid;
   flex-grow: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.active {
-
+.logo {
+  margin: 16px;
 }
 
-.not-active {
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 
+  li {
+      @include fonts.nav-font;
+      margin: 16px;
+    }
+
+  a {
+    color: colors.$text-dark;
+    padding: 8px 32px 8px 32px;
+    border-radius: 32px;
+  }
+
+    a.active {
+      background-color: colors.$nav-selected;
+    }
 }
