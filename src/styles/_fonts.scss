@@ -1,0 +1,60 @@
+// .fraunces-<uniquifier> {
+//   font-family: "Fraunces", serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>; 100-900
+//   font-style: normal; normal or italic
+//   font-variation-settings:
+//     "SOFT" 0, 0, 50, 100
+//     "WONK" 0; 0 or 1
+// }
+
+// .inter-<uniquifier> {
+//   font-family: "Inter", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>; 100-900
+//   font-style: normal;
+//   font-variation-settings:
+//     "slnt" 0; -10-0
+// }
+
+@mixin name-font {
+  font-size: 96px;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-variation-settings: 
+    "SOFT" 50,
+    "WONK" 1;
+}
+
+@mixin page-title-font {
+  font-size: 40px;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-variation-settings: 
+    "SOFT" 50,
+    "WONK" 1;
+}
+
+@mixin nav-font {
+  font-size: 40px;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  font-variation-settings:
+      "SOFT" 50,
+      "WONK" 1;
+}
+
+@mixin body-font {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
