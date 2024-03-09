@@ -1,9 +1,23 @@
-.layout {
+@use '../../styles/fonts';
+@use '../../styles/colors';
+
+.layout-container {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-main {
+.main-container {
   flex-grow: 1;
+}
+
+.page-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 32px;
+}
+
+.title-container {
+  @include fonts.page-title-font;
 }
