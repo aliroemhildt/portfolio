@@ -66,3 +66,12 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+
+/*
+  9. Remove default link styles
+*/
+a {
+  color: unset;
+  text-decoration: none;
+}
