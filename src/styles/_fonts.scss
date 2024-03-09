@@ -22,7 +22,7 @@
 @mixin name-font {
   font-size: 96px;
   font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
+  font-optical-sizing: auto; //remove?
   font-weight: 700;
   font-style: italic;
   font-variation-settings: 
@@ -31,10 +31,10 @@
 }
 
 @mixin page-title-font {
-  font-size: 56px;
+  font-size: 48px;
   color: colors.$text-dark;
   font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
+  font-optical-sizing: auto; //remove?
   font-weight: 600;
   font-style: italic;
   font-variation-settings: 
@@ -43,9 +43,10 @@
 }
 
 @mixin nav-font {
-  font-size: 32px;
+  font-size: 24px;
+  color: colors.$text-dark;
   font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
+  font-optical-sizing: auto; //remove?
   font-weight: 500;
   font-style: italic;
   font-variation-settings:
@@ -54,10 +55,19 @@
 }
 
 @mixin body-font {
-  font-size: 18px;
+  font-size: 16px;
+  color: colors.$text-dark;
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+  font-optical-sizing: auto; //remove?
+  font-weight: 400;
+  font-style: normal; //remove?
+}
 
+@mixin label-font {
+  font-size: 16px;
+  color: colors.$text-dark;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto; //remove?
+  font-weight: 400;
+  font-style: normal; //remove?
 }
