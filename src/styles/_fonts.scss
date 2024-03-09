@@ -1,3 +1,5 @@
+@use './colors';
+
 // .fraunces-<uniquifier> {
 //   font-family: "Fraunces", serif;
 //   font-optical-sizing: auto;
@@ -29,7 +31,8 @@
 }
 
 @mixin page-title-font {
-  font-size: 40px;
+  font-size: 56px;
+  color: colors.$text-dark;
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 600;
