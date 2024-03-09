@@ -1,0 +1,17 @@
+@use '../../styles/colors';
+@use '../../styles/fonts';
+
+.label-card {
+  height: 48px;
+  width: 120px;
+  background-color: colors.$label-background;
+  border-radius: 8px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-text {
+  @include fonts.label-font;
+}
