@@ -1,3 +1,38 @@
-.about {
-  height: 100%;
+@use '../../styles/fonts';
+
+//move to layout?
+.content-container {
+  display: flex;
+  padding: 24px 0 0 0;
+}
+
+//remove?
+.photo-container {
+ 
+}
+
+.photo {
+  min-height: 408px;
+  max-height: 408px;
+  min-width: 312px;
+  max-width: 312px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.text-container {
+  padding: 0 0 0 24px;
+}
+
+.label-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body-text {
+  @include fonts.body-font;
+  padding: 24px 0 0 0;
+  margin: 8px;
 }
