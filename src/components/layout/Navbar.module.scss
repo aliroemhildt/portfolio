@@ -9,6 +9,7 @@
 
 .logo {
   margin: 16px;
+  height: 48px;
 }
 
 .nav-list {
@@ -24,7 +25,6 @@
     }
 
   a {
-    color: colors.$text-dark;
     padding: 8px 32px 8px 32px;
     border-radius: 32px;
   }
