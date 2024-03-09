@@ -2,7 +2,6 @@
 @use '../../styles/colors';
 
 .nav-container {
-  border: 1px yellow solid;
   flex-grow: 0;
   display: flex;
   justify-content: space-between;
@@ -10,6 +9,7 @@
 
 .logo {
   margin: 16px;
+  height: 48px;
 }
 
 .nav-list {
@@ -25,7 +25,6 @@
     }
 
   a {
-    color: colors.$text-dark;
     padding: 8px 32px 8px 32px;
     border-radius: 32px;
   }
