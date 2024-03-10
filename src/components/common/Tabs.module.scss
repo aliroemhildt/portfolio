@@ -1,0 +1,50 @@
+@use '../../styles/colors';
+@use '../../styles/fonts';
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.tab-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border-right: 2px solid colors.$tab-border;
+}
+
+.tab-item {
+  @include fonts.tab-font;
+  margin: 16px 0 8px 8px;
+  width: 8em;
+  padding: 8px;
+}
+
+.tab-item:hover {
+  cursor: pointer;
+}
+
+.current {
+  border: 2px solid colors.$tab-border;
+  border-right: 0;
+  background-color: colors.$tab-background;
+  position: relative;
+  left: 2px;
+  border-radius: 8px 0 0 8px;
+}
+
+.text-container {
+  background-color: colors.$tab-background;
+  padding: 16px 16px 16px 32px;
+  border-radius: 0 8px 8px 0;
+
+  h2 {
+    @include fonts.tab-content-title;
+  }
+
+  p {
+    @include fonts.body-font;
+  }
+}

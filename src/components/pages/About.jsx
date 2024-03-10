@@ -12,7 +12,7 @@ export default function About() {
         <div className={layout['title-container']}>
           <h1>My Skills</h1>
         </div>
-        <div className={layout['content-container']}>
+        <div className={styles['content-container']}>
           <div className={styles['photo-container']}>
             <img className={styles.photo} src={headshot} alt='headshot of Ali Roemhildt'/>
           </div>

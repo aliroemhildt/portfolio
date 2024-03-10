@@ -1,0 +1,14 @@
+@use '../../styles/colors';
+@use '../../styles/fonts';
+
+.resume-button {
+  @include fonts.button-font;
+  background-color: colors.$button;
+  padding: 4px 16px 4px 16px;
+  border: none;
+  border-radius: 19px;
+}
+
+.resume-button:hover {
+  cursor: pointer;
+}
