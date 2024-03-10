@@ -12,14 +12,13 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
-  border-right: 2px solid colors.$tab-border;
 }
 
 .tab-item {
   @include fonts.tab-font;
-  margin: 16px 0 8px 8px;
   width: 8em;
   padding: 8px;
+  border-left: 2px solid colors.$tab-background;
 }
 
 .tab-item:hover {
@@ -27,18 +26,13 @@
 }
 
 .current {
-  border: 2px solid colors.$tab-border;
-  border-right: 0;
-  background-color: colors.$tab-background;
-  position: relative;
-  left: 2px;
-  border-radius: 8px 0 0 8px;
+  border-left: 2px solid colors.$tab-border;
 }
 
 .text-container {
   background-color: colors.$tab-background;
   padding: 16px 16px 16px 32px;
-  border-radius: 0 8px 8px 0;
+  border-radius: 8px;
 
   h2 {
     @include fonts.tab-content-title;
