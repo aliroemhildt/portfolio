@@ -1,0 +1,44 @@
+@use '../../styles/colors';
+@use '../../styles/fonts';
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.tab-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-item {
+  @include fonts.tab-font;
+  width: 8em;
+  padding: 8px;
+  border-left: 2px solid colors.$tab-background;
+}
+
+.tab-item:hover {
+  cursor: pointer;
+}
+
+.current {
+  border-left: 2px solid colors.$tab-border;
+}
+
+.text-container {
+  background-color: colors.$tab-background;
+  padding: 16px 16px 16px 32px;
+  border-radius: 8px;
+
+  h2 {
+    @include fonts.tab-content-title;
+  }
+
+  p {
+    @include fonts.body-font;
+  }
+}

@@ -4,6 +4,7 @@ import Work from './components/pages/Work';
 import About from './components/pages/About';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
+import ResumePDF from './components/pages/ResumePDF';
 import NotFound from './components/pages/NotFound';
 
 const router = createBrowserRouter(
@@ -13,6 +14,7 @@ const router = createBrowserRouter(
       <Route path='about' element={ <About /> } />
       <Route path='resume' element={ <Resume /> }/>
       <Route path='contact' element={ <Contact /> }/>
+      <Route path='resume.pdf' element={ <ResumePDF /> } />
       <Route path='*' element={ <NotFound /> } />
     </Route>
   )

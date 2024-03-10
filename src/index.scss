@@ -5,10 +5,12 @@
 body {
   background-color: colors.$background;
   min-height: 100dvh;
-
 }
 
 #root {
   height: 100dvh;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
