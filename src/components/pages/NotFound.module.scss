@@ -1,3 +1,24 @@
-.notfound {
-  height: 100%;
+@use '../../styles/fonts';
+@use '../../styles/mixins';
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 0 0;
+}
+
+.text {
+  @include fonts.contact-text; //rename or create new mixin
+}
+
+.button-container {
+  padding: 24px 0 0 0;
+}
+
+.home-button {
+  @include mixins.button;
+}
+
+.home-button:hover {
+  @include mixins.button-hover;
 }
