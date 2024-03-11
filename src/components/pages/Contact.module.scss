@@ -1,3 +1,49 @@
-.contact {
-  height: 100%;
+@use '../../styles/colors';
+@use '../../styles/fonts';
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 0 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-text {
+  @include fonts.contact-text;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  padding: 24px 0 0 0;
+}
+
+.link-label {
+  @include fonts.contact-link-label;
+}
+
+.text {
+  @include fonts.contact-link;
+  padding: 0 0 0 16px;
+
+  a {
+    text-decoration: underline;
+  }
+
+  // unvisited
+  a:link {
+
+  }
+
+  a:visited {
+
+  }
+
+  a:hover {
+
+  }
 }
