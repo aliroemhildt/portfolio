@@ -19,115 +19,109 @@
 //     "slnt" 0; -10-0
 // }
 
-@mixin name-font {
-  font-size: 96px;
+@mixin fraunces {
   font-family: "Fraunces", serif;
   font-optical-sizing: auto; //remove?
-  font-weight: 700;
   font-style: italic;
-  font-variation-settings: 
+  font-variation-settings:
     "SOFT" 50,
     "WONK" 1;
+}
+
+@mixin inter {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto; //remove?
+  font-style: normal; //remove?
+}
+
+@mixin name-font {
+  @include fraunces;
+  font-size: 144px;
+  color: colors.$text-dark;
+  font-weight: 700;
+}
+
+@mixin bio-font {
+  @include inter;
+  font-size: 24px;
+  color: colors.$text-dark;
+  font-weight: 400;
+}
+
+@mixin sub-title-font {
+  @include fraunces;
+  font-size: 24px;
+  font-weight: 600;
+  color: colors.$text-dark;
 }
 
 @mixin page-title-font {
-  font-size: 40px;
+  @include fraunces;
+  font-size: 72px;
   color: colors.$text-dark;
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 600;
-  font-style: italic;
-  font-variation-settings: 
-    "SOFT" 50,
-    "WONK" 1;
 }
 
 @mixin nav-font {
+  @include fraunces;
   font-size: 24px;
   color: colors.$text-dark;
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 500;
-  font-style: italic;
-  font-variation-settings:
-      "SOFT" 50,
-      "WONK" 1;
 }
 
 @mixin body-font {
+  @include inter;
   font-size: 16px;
   color: colors.$text-dark;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 400;
-  font-style: normal; //remove?
 }
 
 @mixin label-font {
+  @include inter;
   font-size: 16px;
   color: colors.$text-dark;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 400;
-  font-style: normal; //remove?
 }
 
 @mixin button-font {
+  @include inter;
   font-size: 20px;
   color: colors.$text-light;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 400;
-  font-style: normal; //remove?
 }
 
 @mixin tab-font {
+  @include fraunces;
   font-size: 20px;
   color: colors.$text-dark;
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 600;
-  font-style: italic;
-  font-variation-settings:
-    "SOFT" 50,
-    "WONK" 1;
 }
 
 @mixin tab-content-title {
+  @include inter;
   font-size: 20px;
   color: colors.$text-dark;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 600;
-  font-style: normal; //remove?
 }
 
 @mixin contact-text {
+  @include inter;
   font-size: 24px;
   color: colors.$text-dark;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 400;
-  font-style: normal; //remove?
 }
 
 @mixin contact-link-label {
+  @include fraunces;
   font-size: 24px;
   color: colors.$text-dark;
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 600;
-  font-style: italic;
-  font-variation-settings:
-    "SOFT" 50,
-    "WONK" 1;
 }
 
 @mixin contact-link {
+  @include inter;
   font-size: 18px;
   color: colors.$text-dark;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto; //remove?
   font-weight: 400;
-  font-style: normal; //remove?
 }
