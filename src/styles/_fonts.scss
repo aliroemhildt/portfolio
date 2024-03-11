@@ -102,3 +102,32 @@
   font-style: normal; //remove?
 }
 
+@mixin contact-text {
+  font-size: 24px;
+  color: colors.$text-dark;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto; //remove?
+  font-weight: 400;
+  font-style: normal; //remove?
+}
+
+@mixin contact-link-label {
+  font-size: 24px;
+  color: colors.$text-dark;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto; //remove?
+  font-weight: 600;
+  font-style: italic;
+  font-variation-settings:
+    "SOFT" 50,
+    "WONK" 1;
+}
+
+@mixin contact-link {
+  font-size: 18px;
+  color: colors.$text-dark;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto; //remove?
+  font-weight: 400;
+  font-style: normal; //remove?
+}
