@@ -1,14 +1,26 @@
 import React from 'react';
 import Layout from '../layout/Layout';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './NotFound.module.scss';
+import layout from '../layout/Layout.module.scss';
 
 export default function NotFound() {
   return (
     <Layout>
-      <div className={styles.notfound}>
-        <h1>Page Not Found</h1>
-        <Link to='/'>Back to Home Page</Link>
+      <div className={layout['page-container']}>
+        <div className={layout['title-container']}>
+          <h1>Oops!</h1>
+        </div>
+        <div className={styles['content-container']}>
+          <p className={styles['text']}>
+            We couldn't find the page you're looking for. Let's try that again.
+          </p>
+          <div className={styles['button-container']}>
+            <NavLink to='/'>
+              <button className={styles['home-button']}>Home</button>
+            </NavLink>
+          </div>
+        </div>
       </div>
     </Layout>
     
