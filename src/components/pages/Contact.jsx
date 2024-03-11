@@ -7,9 +7,7 @@ export default function Contact() {
   return (
     <Layout>
       <div className={layout['page-container']}>
-        <div className={layout['title-container']}>
-          <h1>Get in Touch</h1>
-        </div>
+        <h1 className={layout['page-title']}>Get in Touch</h1>
         <div className={styles['content-container']}>
           <div className={styles['text-container']}>
             <p className={styles['body-text']}>
