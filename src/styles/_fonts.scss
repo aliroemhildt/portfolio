@@ -125,3 +125,15 @@
   color: colors.$text-dark;
   font-weight: 400;
 }
+
+@mixin project-card-title {
+  @include inter;
+  font-size: 16px;
+  color: colors.$text-dark;
+}
+
+@mixin project-card-description {
+  @include inter;
+  font-size: 14px;
+  color: colors.$text-dark
+}
