@@ -19,9 +19,34 @@
 
 .sub-title {
   @include fonts.sub-title-font;
-  padding: 104px 0 0 0;
 }
 
 .arrow {
   margin: 16px 0 0 0;
+}
+
+button {
+  margin: 104px 0 0 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-0.25em);
+}
+
+.project-container {
+  height: 100dvh;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 64px 0 64px 0;
+  // justify-content: center;
 }

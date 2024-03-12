@@ -1,0 +1,35 @@
+@use '../../styles/colors';
+@use '../../styles/fonts';
+
+.card-container {
+  background-color: colors.$label-background;
+  border-radius: 16px;
+  height: 16em;
+  width: 32em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5em 0.5em -0.4em #D9D3C2;
+  transition: 0.3s;
+  overflow: hidden;
+  margin: 24px;
+}
+
+.card-container:hover {
+  cursor: pointer;
+  transform: translateY(-0.25em);
+}
+
+.title {
+  @include fonts.project-card-title;
+  padding: 8px;
+}
+
+.description {
+  @include fonts.project-card-description;
+  padding: 0 8px 8px 8px;
+}
+
+.project-img {
+  height: 10em;
+  object-fit: cover;
+}
