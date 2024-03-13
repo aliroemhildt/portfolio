@@ -3,15 +3,13 @@ import Layout from '../layout/Layout';
 import LabelCard from '../common/LabelCard';
 import styles from './About.module.scss';
 import layout from '../layout/Layout.module.scss';
-import headshot from '../../assets/photo2.jpg';
+import headshot from '../../assets/headshot.jpg';
 
 export default function About() {
   return (
     <Layout>
       <div className={layout['page-container']}>
-        <div className={layout['title-container']}>
-          <h1>My Skills</h1>
-        </div>
+        <h1 className={layout['page-title']}>My Skills</h1>
         <div className={styles['content-container']}>
           <div className={styles['photo-container']}>
             <img className={styles.photo} src={headshot} alt='headshot of Ali Roemhildt'/>
