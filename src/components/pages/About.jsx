@@ -3,7 +3,7 @@ import Layout from '../layout/Layout';
 import LabelCard from '../common/LabelCard';
 import styles from './About.module.scss';
 import layout from '../layout/Layout.module.scss';
-import headshot from '../../assets/photo2.jpg';
+import headshot from '../../assets/headshot.jpg';
 
 export default function About() {
   return (

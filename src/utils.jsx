@@ -5,7 +5,3 @@ export function fixPdfPageScroll() {
 export function clearPdfPageScroll() {
   document.body.classList.remove('no-scroll');
 }
-
-export function scrollTo(ref) {
-  window.scrollTo({ top: ref.current?.offsetTop, behavior: 'smooth' })
-}

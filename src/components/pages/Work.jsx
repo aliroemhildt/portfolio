@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
 import Layout from '../layout/Layout';
 import ProjectCard from '../common/ProjectCard';
-// import { scrollTo } from '../../utils';
 import arrow from '../../assets/arrow.svg'
-import photo from '../../assets/photo2.jpg'; //replace
+import photo from '../../assets/headshot.jpg'; //replace
 import styles from './Work.module.scss'
 import layout from '../layout/Layout.module.scss';
 
