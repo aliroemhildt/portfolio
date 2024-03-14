@@ -1,0 +1,15 @@
+@use '../../styles/colors';
+@use '../../styles/fonts';
+@use '../../styles/mixins';
+
+.container {
+  margin: 0 36px 0 0;
+}
+
+.project-button {
+  @include mixins.button;
+}
+
+.project-button:hover {
+  @include mixins.button-hover;
+}
