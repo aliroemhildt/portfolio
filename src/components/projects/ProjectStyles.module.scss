@@ -1,0 +1,72 @@
+@use '../../styles/fonts';
+@use '../../styles/colors';
+@use '../../styles/mixins';
+
+.page-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 24px 0;
+}
+
+.page-title {
+  @include fonts.page-title-font;
+  padding: 0 0 0 112px;
+}
+
+.header {
+  background-color: colors.$text-dark;
+  padding: 0 112px 0 112px;
+}
+
+.content-container {
+  padding: 0 112px 0 112px;
+}
+
+.button-container {
+  display: flex;
+  padding: 16px 0 0 0;
+}
+
+.tech-stack-container {
+  padding: 16px 0 24px 0;
+}
+
+.tech-list {
+  display: flex;
+}
+
+// .card {
+
+
+//   background-color: colors.$button-hover;
+//   div {
+//     background-color: colors.$button-hover;
+//   }
+// }
+
+.text-container {
+
+}
+
+.project-subheading {
+  @include fonts.project-subheading;
+  margin: 24px 0 24px 0;
+}
+
+.body {
+  @include fonts.body-font;
+  padding: 8px 0 8px 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 36px 0 36px 0;
+}
+
+.project-image {
+  height: auto;
+  width: 80%;
+  border-radius: 16px;
+}
