@@ -38,14 +38,14 @@
 @mixin name-font {
   @include fraunces;
   font-size: 144px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 700;
 }
 
 @mixin bio-font {
   @include inter;
   font-size: 24px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 400;
 }
 
@@ -53,94 +53,94 @@
   @include fraunces;
   font-size: 24px;
   font-weight: 600;
-  color: colors.$text-dark;
+  color: colors.$green;
 }
 
 @mixin page-title-font {
   @include fraunces;
   font-size: 72px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 600;
 }
 
 @mixin nav-font {
   @include fraunces;
   font-size: 24px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 500;
 }
 
 @mixin body-font {
   @include inter;
   font-size: 16px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 400;
 }
 
 @mixin label-font {
   @include inter;
   font-size: 16px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 400;
 }
 
 @mixin button-font {
   @include inter;
   font-size: 20px;
-  color: colors.$text-light;
+  color: colors.$offwhite;
   font-weight: 400;
 }
 
 @mixin tab-font {
   @include fraunces;
   font-size: 20px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 600;
 }
 
 @mixin tab-content-title {
   @include inter;
   font-size: 20px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 600;
 }
 
 @mixin contact-text {
   @include inter;
   font-size: 24px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 400;
 }
 
 @mixin contact-link-label {
   @include fraunces;
   font-size: 24px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 600;
 }
 
 @mixin contact-link {
   @include inter;
   font-size: 18px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 400;
 }
 
 @mixin project-card-title {
   @include inter;
   font-size: 16px;
-  color: colors.$text-dark;
+  color: colors.$green;
 }
 
 @mixin project-card-description {
   @include inter;
   font-size: 14px;
-  color: colors.$text-dark
+  color: colors.$green;
 }
 
 @mixin project-subheading {
   @include fraunces;
   font-size: 48px;
-  color: colors.$text-dark;
+  color: colors.$green;
   font-weight: 600;
 }

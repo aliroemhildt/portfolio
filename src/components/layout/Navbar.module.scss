@@ -30,10 +30,10 @@
   }
 
   a:hover {
-    background-color: colors.$nav-hover;
+    background-color: colors.$offwhite-dark;
     }
 
   a.active {
-    background-color: colors.$nav-selected;
+    background-color: colors.$offwhite-light;
   }
 }
