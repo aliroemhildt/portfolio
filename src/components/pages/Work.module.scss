@@ -1,8 +1,6 @@
 @use '../../styles/fonts';
 
 .content-container {
-  // min-height: 100%;
-  // max-width: 100%;
   flex-grow: 1;
   margin: 36px 48px 0 48px;
   display: grid;
@@ -12,16 +10,4 @@
   align-items: center;
   row-gap: 48px;
   column-gap: 48px;
-}
-
-// .project-container {
-//   height: 100dvh;
-// }
-
-.card-container {
-  // display: grid;
-  // grid-template-columns: [first] 50% [line2] 50% [line4] ;
-  // grid-template-rows: [row1start] 75% [row1end] 75% [last-line];
-  // column-gap: 64px;
-  // row-gap: 64px;
 }

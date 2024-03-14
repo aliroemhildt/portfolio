@@ -1,3 +1,6 @@
+// come back to this 
+// use this as a dynamic page for each project with projectData.js
+
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../layout/Layout';
@@ -9,12 +12,6 @@ export default function Project({ children }) {
 
   return (
     <Layout>
-      <div className={layout['page-container']}>
-        <h1 className={layout['page-title']}>{ id }</h1>
-        <div className={styles['content-container']}>
-          { children }
-        </div>
-      </div>
     </Layout>
   )
 }
