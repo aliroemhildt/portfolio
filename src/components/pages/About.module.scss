@@ -1,33 +1,100 @@
 @use '../../styles/fonts';
+@use '../../styles/colors';
 
 .content-container {
   display: flex;
-  padding: 24px 0 0 0;
+  flex-direction: column;
+  padding: 48px 0 0 0;
 }
 
-//remove?
-.photo-container {
- 
+.intro-container {
+  min-height: 90dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 72px 0 0 0;
 }
 
-//fix this
-.photo {
-  min-height: 308px;
-  max-height: 308px;
-  min-width: 212px;
-  max-width: 212px;
+.name {
+  @include fonts.name-font;
+}
+
+.bio {
+  @include fonts.bio-font;
+  width: 34em;
+}
+
+.bold {
+  font-weight: 700;
+  color: colors.$green-light;
+}
+
+.scroll-button {
+  margin: 104px 0 0 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.scroll-button:hover {
+  transform: translateY(-0.25em);
+}
+
+.arrow {
+  margin: 16px 0 0 0;
+}
+
+.sub-title {
+  @include fonts.sub-title-font;
+}
+
+.image-container {
+  width: 30%;
+}
+
+.image {
+  // min-height: 308px;
+  // max-height: 400px;
+  // min-width: 212px;
+  // max-width: 212px;
   width: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.text-container {
-  padding: 0 0 0 24px;
+.skills-container {
+  display: flex;
+  padding: 36px 48px 0 48px;
 }
 
 .label-card-container {
+  padding: 0 0 0 36px;
+  width: 70%;
+}
+
+.label-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.skills-text {
+  padding: 36px 0 0 0;
+}
+
+.background-container {
+  padding: 72px 0 0 0;
+  flex-grow: 1;
+}
+
+.body-container {
+  padding: 0px 48px 48px 48px;
 }
 
 .body-text {
