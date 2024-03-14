@@ -137,3 +137,10 @@
   font-size: 14px;
   color: colors.$text-dark
 }
+
+@mixin project-subheading {
+  @include fraunces;
+  font-size: 48px;
+  color: colors.$text-dark;
+  font-weight: 600;
+}

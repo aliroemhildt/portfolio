@@ -4,14 +4,15 @@
 .card-container {
   background-color: colors.$label-background;
   border-radius: 16px;
-  height: 16em;
-  width: 32em;
+  height: 280px;
+  width: 350px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0.5em 0.5em -0.4em #D9D3C2;
+  box-shadow: 0 0.5em 0.5em -0.4em #D9D3C2; // add to colors
   transition: 0.3s;
   overflow: hidden;
   margin: 24px;
+  border: 1px solid #D9D3C2;
 }
 
 .card-container:hover {
@@ -30,6 +31,6 @@
 }
 
 .project-img {
-  height: 10em;
+  height: 70%;
   object-fit: cover;
 }

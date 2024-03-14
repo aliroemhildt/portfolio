@@ -29,7 +29,11 @@
     border-radius: 32px;
   }
 
-    a.active {
-      background-color: colors.$nav-selected;
+  a:hover {
+    background-color: colors.$nav-hover;
     }
+
+  a.active {
+    background-color: colors.$nav-selected;
+  }
 }

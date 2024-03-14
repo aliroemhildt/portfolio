@@ -11,4 +11,5 @@
 
 @mixin button-hover {
   cursor: pointer;
+  background-color: colors.$button-hover;
 }

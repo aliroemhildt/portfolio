@@ -1,0 +1,18 @@
+@use '../../styles/colors';
+@use '../../styles/fonts';
+@use '../../styles/mixins';
+
+.container {
+  margin: 0 16px 0 0;
+}
+
+.project-button {
+  @include mixins.button;
+  background-color: colors.$nav-selected;
+  color: colors.$text-dark;
+}
+
+.project-button:hover {
+  @include mixins.button-hover;
+  background-color: colors.$nav-hover;
+}

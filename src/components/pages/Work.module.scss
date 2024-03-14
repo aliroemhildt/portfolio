@@ -25,7 +25,7 @@
   margin: 16px 0 0 0;
 }
 
-button {
+.work-button {
   margin: 104px 0 0 0;
   border: none;
   background: none;
@@ -36,7 +36,7 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.work-button:hover {
   transform: translateY(-0.25em);
 }
 
@@ -45,8 +45,9 @@ button:hover {
 }
 
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
   padding: 64px 0 64px 0;
-  // justify-content: center;
+  display: grid;
+  grid-template-columns: [first] auto [line2] auto [line3] auto [line4] ;
+  grid-template-rows: [row1start] auto [row1end] auto [third-line] auto [last-line];
+
 }
