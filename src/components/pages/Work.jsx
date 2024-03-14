@@ -24,7 +24,7 @@ export default function Work() {
         <div className={styles['intro-container']}>
           <h1 className={styles.name}>Ali Roemhildt</h1>
           <p className={styles.bio}>I'm a software engineer specializing in frontend development</p>
-          <button onClick={scrollTo}>
+          <button className={styles['work-button']} onClick={scrollTo}>
             <p className={styles['sub-title']}>things I've made</p>
           <img className={styles.arrow} src={arrow} />
           </button>
@@ -32,12 +32,12 @@ export default function Work() {
         <div className={styles['project-container']} ref={projectSection}>
           <h1 className={layout['page-title']}>Projects</h1>
           <div className={styles['card-container']}>
-            <ProjectCard
+            {/* <ProjectCard
               id='portfolio'
               photo={portfolioImg}
               title={'Portfolio'}
               description={'How I made this portfolio website'}
-            />
+            /> */}
             <ProjectCard
               id='charttoppers'
               photo={charttoppersImg}
@@ -51,13 +51,13 @@ export default function Work() {
               description={''}
             />
             <ProjectCard
-              id='tomatillos'
+              id='rancidtomatillos'
               photo={rancidtomatillosImg}
               title={'Rancid Tomatillos'}
               description={'A multi-page movie review app made with React'}
             />
             <ProjectCard
-              id='overlook'
+              id='overlookhotel'
               photo={overlookhotelImg}
               title={'Overlook Hotel'}
               description={'A hotel booking app made with Vanilla JS'}

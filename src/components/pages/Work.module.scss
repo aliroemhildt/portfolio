@@ -25,7 +25,7 @@
   margin: 16px 0 0 0;
 }
 
-button {
+.work-button {
   margin: 104px 0 0 0;
   border: none;
   background: none;
@@ -36,7 +36,7 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.work-button:hover {
   transform: translateY(-0.25em);
 }
 
