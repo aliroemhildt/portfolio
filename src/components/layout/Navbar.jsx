@@ -12,18 +12,18 @@ export default function Navbar() {
       <ul className={styles['nav-list']}>
         <li>
           <NavLink
-            to='/'
-            className={({isActive}) => isActive ? `${styles.active}` : ''}
-          >
-              Work
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
             to='/about'
             className={({ isActive }) => isActive ? `${styles.active}` : ''}
           >
             About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to='/'
+            className={({isActive}) => isActive ? `${styles.active}` : ''}
+          >
+              Work
           </NavLink>
         </li>
         <li>
