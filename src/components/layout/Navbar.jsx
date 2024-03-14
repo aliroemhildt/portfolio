@@ -6,13 +6,13 @@ import logo from '../../assets/logo.svg';
 export default function Navbar() {
   return (
     <nav className={styles['nav-container']}>
-      <NavLink to='/'>
+      <NavLink to='/' reloadDocument>
         <img className={styles.logo} src={logo} alt='logo' />
       </NavLink>
       <ul className={styles['nav-list']}>
         <li>
           <NavLink
-            to='/about'
+            to='/'
             className={({ isActive }) => isActive ? `${styles.active}` : ''}
           >
             About
@@ -20,7 +20,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink
-            to='/'
+            to='/work'
             className={({isActive}) => isActive ? `${styles.active}` : ''}
           >
               Work
