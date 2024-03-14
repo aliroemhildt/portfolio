@@ -11,7 +11,6 @@ export default function Project({ children }) {
     <Layout>
       <div className={layout['page-container']}>
         <h1 className={layout['page-title']}>{ id }</h1>
-        <p>description...</p>
         <div className={styles['content-container']}>
           { children }
         </div>
