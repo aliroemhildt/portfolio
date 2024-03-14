@@ -14,13 +14,12 @@ import NotFound from './components/pages/NotFound';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={ <Root /> }>
-      <Route index element={ <Work/> } />
-      {/* <Route path='work/portfolio' element={<PortfolioProject /> } /> */}
+      <Route index element={ <About /> } />
+      <Route path='work' element={<Work />} />
       <Route path='work/charttoppers' element={ <ChartToppersProject /> } />
       <Route path='work/lynnslist' element={<LynnsListProject />} />
       <Route path='work/rancidtomatillos' element={<RancidTomatillosProject /> } />
       <Route path='work/overlookhotel' element={<OverlookHotelProject />} />
-      <Route path='about' element={ <About /> } />
       <Route path='resume' element={ <Resume /> }/>
       <Route path='contact' element={ <Contact /> }/>
       <Route path='resume.pdf' element={ <ResumePDF /> } />
