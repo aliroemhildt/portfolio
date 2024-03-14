@@ -23,32 +23,32 @@ export default function Work() {
       <div className={layout['page-container']}>
           <h1 className={layout['page-title']}>Projects</h1>
           <div className={styles['content-container']}>
-            <div className={styles['card-container']}>
+            
               <ProjectCard
                 id='charttoppers'
                 photo={charttoppersImg}
                 title={'Chart Toppers'}
-                description={'A music quiz of Billboard chart toppers over the decades'}
+                description={'A Billboard Top 100 Music Quiz'}
               />
               <ProjectCard
                 id='lynnslist'
                 photo={lynnslistImg}
                 title={`Lynn's List`}
-                description={'A restaurant review app made with React'}
+                description={'Discovering Denver Restaurants'}
               />
               <ProjectCard
                 id='rancidtomatillos'
                 photo={rancidtomatillosImg}
                 title={'Rancid Tomatillos'}
-                description={'A multi-page movie review app made with React'}
+                description={'Movie Reviews & Ratings'}
               />
               <ProjectCard
                 id='overlookhotel'
                 photo={overlookhotelImg}
                 title={'Overlook Hotel'}
-                description={'A hotel booking app made with Vanilla JS'}
+                description={'Hotel Management with Vanilla JS'}
               />
-            </div>
+           
           </div>
       </div>
     </Layout>
