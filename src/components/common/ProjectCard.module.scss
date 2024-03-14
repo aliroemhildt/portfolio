@@ -2,17 +2,18 @@
 @use '../../styles/fonts';
 
 .card-container {
-  background-color: colors.$offwhite-light;
+  background-color: colors.$green;
   border-radius: 16px;
-  height: 280px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0.5em 0.5em -0.4em #D9D3C2; // add to colors
+  box-shadow: -4px 4px 4px colors.$offwhite-dark; //make darker
   transition: 0.3s;
   overflow: hidden;
-  margin: 24px;
-  border: 1px solid #D9D3C2;
+  border: 16px solid colors.$green;
 }
 
 .card-container:hover {
@@ -22,15 +23,17 @@
 
 .title {
   @include fonts.project-card-title;
-  padding: 8px;
+  padding: 16px;
 }
 
 .description {
   @include fonts.project-card-description;
-  padding: 0 8px 8px 8px;
+  padding: 0 16px 16px 16px;
 }
 
 .project-img {
   height: 70%;
   object-fit: cover;
+  object-position: 50% 0;
+  border-radius: 8px;
 }
