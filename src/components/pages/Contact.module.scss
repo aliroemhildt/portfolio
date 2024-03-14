@@ -4,7 +4,8 @@
 .content-container {
   display: flex;
   flex-direction: column;
-  padding: 24px 0 0 0;
+  padding: 36px 48px 0 48px;
+  flex-grow: 2;
 }
 
 .text-container {
@@ -17,9 +18,16 @@
 }
 
 .link-container {
+  padding: 112px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sub-container {
   display: flex;
   align-items: center;
-  padding: 24px 0 0 0;
+  padding: 18px 0 0 0;
 }
 
 .link-label {
@@ -35,15 +43,15 @@
   }
 
   // unvisited
-  a:link {
+  // a:link {
 
-  }
+  // }
 
-  a:visited {
-
-  }
+  // a:visited {
+    
+  // }
 
   a:hover {
-
+    color: colors.$green-dark;
   }
 }
