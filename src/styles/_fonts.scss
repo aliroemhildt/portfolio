@@ -72,7 +72,7 @@
 
 @mixin body-font {
   @include inter;
-  font-size: 16px;
+  font-size: 18px;
   color: colors.$green;
   font-weight: 400;
 }
@@ -127,15 +127,17 @@
 }
 
 @mixin project-card-title {
-  @include inter;
-  font-size: 16px;
-  color: colors.$green;
+  @include fraunces;
+  font-size: 36px;
+  color: colors.$offwhite;
+  font-weight: 300;
 }
 
 @mixin project-card-description {
   @include inter;
-  font-size: 14px;
-  color: colors.$green;
+  font-size: 18px;
+  color: colors.$offwhite;
+  font-weight: 400;
 }
 
 @mixin project-subheading {
