@@ -2,7 +2,11 @@ import React, { useRef } from 'react';
 import Layout from '../layout/Layout';
 import ProjectCard from '../common/ProjectCard';
 import arrow from '../../assets/arrow.svg'
-import photo from '../../assets/headshot.jpg'; //replace
+import portfolioImg from '../../assets/portfolio.png';
+import charttoppersImg from '../../assets/charttoppers.png';
+import lynnslistImg from '../../assets/lynnslist.png';
+import rancidtomatillosImg from '../../assets/rancidtomatillos.png';
+import overlookhotelImg from '../../assets/overlookhotel.png';
 import styles from './Work.module.scss'
 import layout from '../layout/Layout.module.scss';
 
@@ -30,27 +34,33 @@ export default function Work() {
           <div className={styles['card-container']}>
             <ProjectCard
               id='portfolio'
-              photo={photo}
+              photo={portfolioImg}
               title={'Portfolio'}
               description={'How I made this portfolio website'}
             />
             <ProjectCard
               id='charttoppers'
-              photo={photo}
+              photo={charttoppersImg}
               title={'Chart Toppers'}
-              description={'A billboard top 100 quiz'}
+              description={'A music quiz of Billboard chart toppers over the decades'}
+            />
+            <ProjectCard 
+              id='lynnslist'
+              photo={lynnslistImg}
+              title={`Lynn's List`}
+              description={''}
             />
             <ProjectCard
               id='tomatillos'
-              photo={photo}
+              photo={rancidtomatillosImg}
               title={'Rancid Tomatillos'}
-              description={'Reviewing movies with React'}
+              description={'A multi-page movie review app made with React'}
             />
             <ProjectCard
               id='overlook'
-              photo={photo}
+              photo={overlookhotelImg}
               title={'Overlook Hotel'}
-              description={'Hotel Management with vanilla JS'}
+              description={'A hotel booking app made with Vanilla JS'}
             />
           </div>
         </div>
