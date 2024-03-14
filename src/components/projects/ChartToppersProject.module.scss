@@ -1,0 +1,46 @@
+@use '../../styles/fonts';
+@use '../../styles/mixins';
+
+.content-container {
+  padding-top: 48px;
+}
+
+.tech-stack-container {
+
+}
+
+.overview-container {
+
+}
+
+.project-subheading {
+  @include fonts.project-subheading;
+}
+
+.overview {
+  padding: 24px 0 0 0;
+}
+
+.body {
+  @include fonts.body-font;
+  padding: 8px 0 8px 0;
+}
+
+.button-container {
+  display: flex;
+  padding: 16px 0 48px 0;
+  // justify-content: space-between;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 36px 0 36px 0;
+}
+
+.project-image {
+  // border: 10px solid white;
+  height: 400px;
+  width: auto;
+  border-radius: 16px;
+}
