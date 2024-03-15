@@ -6,9 +6,11 @@ import logo from '../../assets/logo.svg';
 export default function Navbar() {
   return (
     <nav className={styles['nav-container']}>
-      <NavLink to='/' reloadDocument>
-        <img className={styles.logo} src={logo} alt='logo' />
-      </NavLink>
+      <div className={styles['logo-container']}>
+        <NavLink to='/' reloadDocument>
+          <img className={styles.logo} src={logo} alt='logo' />
+        </NavLink>
+      </div>
       <ul className={styles['nav-list']}>
         <li>
           <NavLink
