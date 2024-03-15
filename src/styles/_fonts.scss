@@ -65,9 +65,9 @@
 
 @mixin nav-font {
   @include fraunces;
-  font-size: 24px;
+  font-size: 18px;
   color: colors.$green;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @mixin body-font {
@@ -115,7 +115,7 @@
 @mixin contact-link-label {
   @include fraunces;
   font-size: 24px;
-  color: colors.$green;
+  color: colors.$green-light;
   font-weight: 600;
 }
 
@@ -128,14 +128,14 @@
 
 @mixin project-card-title {
   @include fraunces;
-  font-size: 52px;
+  font-size: 36px;
   color: colors.$green;
   font-weight: 600;
 }
 
 @mixin project-card-description {
   @include inter;
-  font-size: 20px;
+  font-size: 18px;
   color: colors.$green;
   font-weight: 400;
 }
