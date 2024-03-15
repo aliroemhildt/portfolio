@@ -5,7 +5,7 @@ import styles from './ResumeButton.module.scss';
 export default function ResumeButton() {
   return (
     <NavLink to='/resume.pdf' target='_blank'>
-      <button className={styles['resume-button']}>My Resume</button>
+      <button className={styles['resume-button']}>Full Resume</button>
     </NavLink>
   )
 }

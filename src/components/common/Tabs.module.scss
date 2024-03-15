@@ -10,12 +10,12 @@
   display: flex;
   list-style: none;
   flex-direction: column;
-  padding: 0;
+  // padding: 28px 0 0 0;
   margin: 0;
 }
 
 .tab-item {
-  @include fonts.tab-font;
+  @include fonts.body-font-small;
   width: 8em;
   padding: 8px;
   border-left: 2px solid colors.$offwhite-light;
@@ -30,21 +30,32 @@
 }
 
 .text-container {
-  min-height: 500px; //remove after shortening slalom content
+  //remove after shortening slalom content
+  min-height: 300px;
   display: flex;
   align-items: flex-start;
 }
 
 .text-box {
   background-color: colors.$offwhite-light;
-  padding: 16px 16px 16px 32px;
+  padding: 32px;
+  margin: 0 0 0 36px;
   border-radius: 8px;
 
   h2 {
     @include fonts.tab-content-title;
   }
+
+  h3 {
+    @include fonts.body-font-small;
+    color: colors.$green-light;
+  }
   
-  p {
-    @include fonts.body-font;
+  li {
+    @include fonts.body-font-small;
+  }
+
+  ul {
+    padding: 24px 0 0 24px;
   }
 }

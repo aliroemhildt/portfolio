@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ResumeButton from './ResumeButton';
 import styles from './Tabs.module.scss';
 
 
@@ -8,6 +9,9 @@ export default function Tabs({ children }) {
   return (
   <div className={styles.container}>
     <ul className={styles['tab-list']}>
+
+          <ResumeButton />
+
       {children.map((tab) => (
         <li
           key={tab.props.tabName}

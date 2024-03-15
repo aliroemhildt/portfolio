@@ -1,3 +1,6 @@
+@use "../../styles/colors";
+@use "../../styles/fonts";
+
 .content-container {
   height: 100%;
   display: flex;
@@ -16,4 +19,13 @@
   flex-grow: 1;
   padding: 0 0 48px 0;
   // min-height: 600px;
+
+  li {
+    // @include fonts.body-font-small;
+    
+  }
+
+  li::marker {
+    color: colors.$green-light;
+  }
 }

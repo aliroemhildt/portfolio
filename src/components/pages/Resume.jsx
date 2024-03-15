@@ -13,35 +13,35 @@ export default function Resume() {
           <h1 className={layout['page-title']}>My Experience</h1>
         </div>
         <div className={styles['content-container']}>
-          <div className={styles['button-container']}>
+          {/* <div className={styles['button-container']}>
             <ResumeButton />
-          </div>
+          </div> */}
           <div className={styles['tabs-container']}>
+            
             <Tabs>
               <div tabName='Slalom'>
                 <h2>Slalom</h2>
                 <h3>Software Engineer Associate Consultant</h3>
+                <h3>June 2022 - Sept 2023</h3>
                 <ul>
                   <li>
                     Collaborated with client and consultant teams to analyze, design, and deliver custom software solutions.
                   </li>
                   <li>
-                    Stayed current with industry trends through continuous learning and research, expanding skills in NodeJS, Angular, and GraphQL.
+                    GraphQL Project: migration from REST API to GraphQL for a telecommunications company, reducing technical debt and improving efficiency.
                   </li>
                   <li>
-                    GraphQL Migration Project: Improved performance and compatibility for a telecommunications company through the migration from REST API to GraphQL. Reduced technical debt by removing over 50k lines of unused legacy code. Wrote technical documentation, monitored API performance, refactored GraphQL operations, conducted unit tests, and performed code reviews.
+                    AI Frontend Project: Led the frontend development for an internal generative AI chatbot prototype using React and Azure's OpenAI service.
                   </li>
                   <li>
-                    AI Frontend Project: Led the frontend development for an internal generative AI chatbot prototype using React. Developed the main chat interface, chat history, and clear chat functionality. Led communication between developers, product designer, and project manager to ensure all requirements were met. Researched and implemented Azure’s OpenAI service and contributed to AI prompt engineering.
-                  </li>
-                  <li>
-                    QE Project: Owned all quality engineering for a greenfield government phone portal. Streamlined the development process and increased team efficiency by designing a robust test plan and collaborating with developers to establish testing strategies for a React frontend, NodeJS backend, and Amazon Chime phone service. Performed code reviews and executed all manual testing.
+                    QE Project: Owned all quality engineering for a greenfield government phone portal. Designed a robust test plan and collaborating with developers to establish testing strategies.
                   </li>
                 </ul>
               </div>
               <div tabName='Turing'>
                 <h2>Turing</h2>
                 <h3>Frontend Engineering Student</h3>
+                <h3>Oct 2021 - April 2022</h3>
                 <ul>
                   <li>
                     7 month immersive, project-based, ACCET accredited software engineering program
@@ -63,6 +63,7 @@ export default function Resume() {
               <div tabName='Green Sprouts'>
                 <h2>Green Sprouts</h2>
                 <h3>Supply Chain Analyst</h3>
+                <h3>Nov 2020 - Oct 2021</h3>
                 <ul>
                   <li>
                     Created monthly forecasts for 500+ products, improving forecast accuracy by 23%
