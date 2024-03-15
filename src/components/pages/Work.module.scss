@@ -2,7 +2,8 @@
 
 .content-container {
   flex-grow: 1;
-  margin: 36px 48px 0 48px;
+  // margin: 36px 48px 0 48px;
+  width: 80%;
   display: grid;
   grid-template-columns: [first] calc(50% - 24px) [line2] calc(50% - 24px) [line4];
   grid-template-rows: [row1start] calc(50% - 24px) [row1end] calc(50% - 24px) [last-line];

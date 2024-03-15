@@ -20,6 +20,12 @@
   padding: 24px 112px 112px 112px;
 }
 
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-self: flex-start;
+}
+
 .page-title {
   @include fonts.page-title-font;
   padding: 0 0 48px 0;

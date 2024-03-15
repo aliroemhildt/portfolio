@@ -8,7 +8,9 @@ export default function Work() {
   return (
     <Layout>
       <div className={layout['page-container']}>
+        <div className={layout['title-container']}>
           <h1 className={layout['page-title']}>Projects</h1>
+        </div>
           <div className={styles['content-container']}>
               <ProjectCard
                 id='charttoppers'

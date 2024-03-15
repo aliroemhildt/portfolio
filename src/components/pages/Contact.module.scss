@@ -4,8 +4,9 @@
 .content-container {
   display: flex;
   flex-direction: column;
-  padding: 36px 48px 0 48px;
-  flex-grow: 2;
+  // padding: 36px 48px 0 48px;
+  flex-grow: 1;
+  width: 80%;
 }
 
 .text-container {
