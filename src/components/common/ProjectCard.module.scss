@@ -2,7 +2,7 @@
 @use '../../styles/fonts';
 
 .grid-item {
-  height: 300px;
+  height: 200px;
   width: 100%;
 }
 
@@ -27,16 +27,16 @@
 
 .title {
   @include fonts.project-card-title;
-  padding: 16px;
 }
 
 .description {
   @include fonts.project-card-description;
-  padding: 0 16px 16px 16px;
+  padding: 8px 0 16px 0;
   max-width: 500px;
 }
 
 .label-container {
   display: flex;
   padding: 0 8x 16px 8px;
+  gap: 8px;
 }
