@@ -7,16 +7,16 @@
 }
 
 .card-container {
-  background-color: colors.$green;
+  background-color: colors.$offwhite-light;
   border-radius: 16px;
   height: 100%;
   width: 100%;
   padding: 48px;
   display: flex;
-  box-shadow: -2px 2px 4px 1px colors.$offwhite-dark;
+  box-shadow: -4px 4px 8px colors.$offwhite-dark;
   flex-direction: column;
   transition: 0.3s;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -36,38 +36,7 @@
   max-width: 500px;
 }
 
-.charttoppers {
-  background-color: #B7C7E5;
-
-  h2,
-  p {
-    color: #4A6089;
-  }
-}
-
-.lynnslist {
-  background-color: #11878F;
-
-  h2,
-  p {
-    color: #073B48;
-  }
-}
-
-.rancidtomatillos {
-  background-color: #85AA45;
-
-  h2,
-  p {
-    color: #425A1C;
-  }
-}
-
-.overlookhotel {
-  background-color: #D4E5E6;
-
-  h2,
-  p {
-    color: #4A6089;
-  }
+.label-container {
+  display: flex;
+  padding: 0 8x 16px 8px;
 }

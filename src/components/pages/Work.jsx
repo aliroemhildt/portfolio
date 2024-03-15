@@ -14,22 +14,25 @@ export default function Work() {
                 id='charttoppers'
                 title={'Chart Toppers'}
                 description={'A Billboard Top 100 Music Quiz'}
+                labels={['React', 'TypeScript', 'Express']}
               />
               <ProjectCard
                 id='lynnslist'
                 title={`Lynn's List`}
                 description={'Discovering Denver Restaurants'}
+                labels={['React', 'TypeScript', 'Yelp API']}
               />
               <ProjectCard
                 id='rancidtomatillos'
-
                 title={'Rancid Tomatillos'}
                 description={'Movie Reviews & Ratings'}
+                labels={['React', 'Data Cleaning', 'Express']}
               />
               <ProjectCard
                 id='overlookhotel'
                 title={'Overlook Hotel'}
-                description={'Hotel Management with Vanilla JS'}
+                description={'Hotel Management and Booking'}
+                labels={['Vanilla JS', 'Sass', 'OOP']}
               />
           </div>
       </div>

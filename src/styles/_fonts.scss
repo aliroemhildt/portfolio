@@ -79,7 +79,7 @@
 
 @mixin label-font {
   @include inter;
-  font-size: 16px;
+  font-size: 14px;
   color: colors.$offwhite-light;
   font-weight: 400;
 }
@@ -129,14 +129,14 @@
 @mixin project-card-title {
   @include fraunces;
   font-size: 52px;
-  color: colors.$offwhite;
+  color: colors.$green;
   font-weight: 600;
 }
 
 @mixin project-card-description {
   @include inter;
-  font-size: 18px;
-  color: colors.$offwhite;
+  font-size: 20px;
+  color: colors.$green;
   font-weight: 400;
 }
 

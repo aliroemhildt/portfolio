@@ -16,9 +16,11 @@
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 24px 112px 112px 112px;
 }
 
 .page-title {
   @include fonts.page-title-font;
+  padding: 0 0 48px 0;
 }
