@@ -1,13 +1,6 @@
 @use '../../styles/fonts';
 @use '../../styles/colors';
 
-.content-container {
-  display: flex;
-  flex-direction: column;
-  padding: 48px 0 0 0;
-  width: 80%;
-}
-
 .intro-container {
   // width:80%;
   min-height: 90dvh;
@@ -15,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 72px 0 0 0;
+  padding: 24px 0 0 0;
 }
 
 .name {
@@ -33,7 +26,7 @@
 }
 
 .scroll-button {
-  margin: 104px 0 0 0;
+  margin: 72px 0 0 0;
   border: none;
   background: none;
   cursor: pointer;
@@ -49,6 +42,14 @@
 
 .arrow {
   margin: 16px 0 0 0;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0 0 0;
+  width: 80%;
 }
 
 .sub-title {
@@ -105,9 +106,13 @@
 }
 
 .background-container {
-  padding: 112px 0 0 0;
+  padding: 148px 0 0 0;
   flex-grow: 1;
   width: 100%;
+
+  h1 {
+    padding: 0 0 24px 0;
+  }
 }
 
 .body-container {

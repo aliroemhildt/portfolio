@@ -2,13 +2,12 @@
 
 .content-container {
   flex-grow: 1;
-  // margin: 36px 48px 0 48px;
   width: 80%;
   display: grid;
-  grid-template-columns: [first] calc(50% - 24px) [line2] calc(50% - 24px) [line4];
-  grid-template-rows: [row1start] calc(50% - 24px) [row1end] calc(50% - 24px) [last-line];
+  grid-template-columns: [first] calc(50% - 18px) [line2] calc(50% - 18px) [line4];
+  grid-template-rows: [row1start] calc(50% - 18px) [row1end] calc(50% - 18px) [last-line];
   justify-items: center;
   align-items: center;
-  row-gap: 48px;
-  column-gap: 48px;
+  row-gap: 36px;
+  column-gap: 36px;
 }
