@@ -8,11 +8,11 @@
 
 .project-button {
   @include mixins.button;
-  background-color: colors.$nav-selected;
-  color: colors.$text-dark;
+  background-color: colors.$offwhite;
+  color: colors.$green;
 }
 
 .project-button:hover {
   @include mixins.button-hover;
-  background-color: colors.$nav-hover;
+  background-color: colors.$offwhite-dark;
 }

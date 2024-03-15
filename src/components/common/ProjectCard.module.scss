@@ -1,18 +1,23 @@
 @use '../../styles/colors';
 @use '../../styles/fonts';
 
+.grid-item {
+  height: 200px;
+  width: 100%;
+}
+
 .card-container {
-  background-color: colors.$label-background;
+  background-color: colors.$offwhite-light;
   border-radius: 16px;
-  height: 280px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
+  padding: 48px;
   display: flex;
+  box-shadow: -4px 4px 8px colors.$offwhite-dark;
   flex-direction: column;
-  box-shadow: 0 0.5em 0.5em -0.4em #D9D3C2; // add to colors
   transition: 0.3s;
-  overflow: hidden;
-  margin: 24px;
-  border: 1px solid #D9D3C2;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .card-container:hover {
@@ -22,15 +27,16 @@
 
 .title {
   @include fonts.project-card-title;
-  padding: 8px;
 }
 
 .description {
   @include fonts.project-card-description;
-  padding: 0 8px 8px 8px;
+  padding: 8px 0 16px 0;
+  max-width: 500px;
 }
 
-.project-img {
-  height: 70%;
-  object-fit: cover;
+.label-container {
+  display: flex;
+  padding: 0 8x 16px 8px;
+  gap: 8px;
 }

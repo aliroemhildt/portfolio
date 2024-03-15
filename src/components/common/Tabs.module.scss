@@ -18,7 +18,7 @@
   @include fonts.tab-font;
   width: 8em;
   padding: 8px;
-  border-left: 2px solid colors.$tab-background;
+  border-left: 2px solid colors.$offwhite-light;
 }
 
 .tab-item:hover {
@@ -26,11 +26,11 @@
 }
 
 .current {
-  border-left: 2px solid colors.$tab-border;
+  border-left: 2px solid colors.$green;
 }
 
 .text-container {
-  background-color: colors.$tab-background;
+  background-color: colors.$offwhite-light;
   padding: 16px 16px 16px 32px;
   border-radius: 8px;
 

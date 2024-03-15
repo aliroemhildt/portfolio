@@ -1,14 +1,21 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import LabelCard from './LabelCard';
 import styles from './ProjectCard.module.scss';
 
-export default function ProjectCard({ id, photo, title, description}) {
+export default function ProjectCard({ id, title, description, labels }) {
+  let labelsList = labels.map((label, index) => {
+    return <LabelCard text={label} key={index} />
+  })
+
   return (
-    <NavLink to={`work/${id}`}>
-      <div className={styles['card-container']}>
-        <img className={styles['project-img']} src={photo} />
+    <NavLink to={`./${id}`} className={styles['grid-item']}>
+      <div className={`${styles['card-container']} ${styles[id]}`}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
+        <div className={styles['label-container']}>
+          {labelsList}
+        </div>
       </div>
     </NavLink>
   )

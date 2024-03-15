@@ -8,7 +8,9 @@ export default function NotFound() {
   return (
     <Layout>
       <div className={layout['page-container']}>
-        <h1 className={layout['page-title']}>Oops!</h1>
+        <div className={layout['title-container']}>
+          <h1 className={layout['page-title']}>Oops!</h1>
+        </div>
         <div className={styles['content-container']}>
           <p className={styles['text']}>
             We couldn't find the page you're looking for. Let's try that again.

@@ -1,37 +1,134 @@
 @use '../../styles/fonts';
+@use '../../styles/colors';
 
-.content-container {
+.intro-container {
+  // width:80%;
+  min-height: 90dvh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   padding: 24px 0 0 0;
 }
 
-//remove?
-.photo-container {
- 
+.name {
+  @include fonts.name-font;
 }
 
-//fix this
-.photo {
-  min-height: 308px;
-  max-height: 308px;
-  min-width: 212px;
-  max-width: 212px;
+.bio {
+  @include fonts.bio-font;
+  width: 34em;
+}
+
+.bold {
+  font-weight: 700;
+  color: colors.$green-light;
+}
+
+.scroll-button {
+  margin: 72px 0 0 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.scroll-button:hover {
+  transform: translateY(-0.25em);
+}
+
+.arrow {
+  margin: 16px 0 0 0;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0 0 0;
+  width: 80%;
+}
+
+.sub-title {
+  @include fonts.sub-title-font;
+}
+
+.skills-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-sub-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  display: flex;
   width: 100%;
+}
+
+.bottom-container {
+  display: flex;
+  width: 100%;
+  padding: 72px 0 0 0;
+}
+
+.label-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.image {
+  width: 40%;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.text-container {
-  padding: 0 0 0 24px;
+.skills-text {
+  padding: 0 0 0 36px;
+  width: 60%;
 }
 
-.label-card-container {
+.intro-text {
+  @include fonts.body-font;
+  font-size: 24px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.background-container {
+  padding: 148px 0 0 0;
+  flex-grow: 1;
+  width: 100%;
+
+  h1 {
+    padding: 0 0 24px 0;
+  }
+}
+
+.body-container {
+  padding: 0 0 48px 0;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body-sub-container {
+  width: 70%;
 }
 
 .body-text {
   @include fonts.body-font;
   padding: 24px 0 0 0;
-  margin: 8px;
+  width: 100%;
 }

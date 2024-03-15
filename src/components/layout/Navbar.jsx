@@ -6,24 +6,26 @@ import logo from '../../assets/logo.svg';
 export default function Navbar() {
   return (
     <nav className={styles['nav-container']}>
-      <NavLink to='/'>
-        <img className={styles.logo} src={logo} alt='logo' />
-      </NavLink>
+      <div className={styles['logo-container']}>
+        <NavLink to='/' reloadDocument>
+          <img className={styles.logo} src={logo} alt='logo' />
+        </NavLink>
+      </div>
       <ul className={styles['nav-list']}>
         <li>
           <NavLink
             to='/'
-            className={({isActive}) => isActive ? `${styles.active}` : ''}
+            className={({ isActive }) => isActive ? `${styles.active}` : ''}
           >
-              Work
+            About
           </NavLink>
         </li>
         <li>
           <NavLink
-            to='/about'
-            className={({ isActive }) => isActive ? `${styles.active}` : ''}
+            to='/work'
+            className={({isActive}) => isActive ? `${styles.active}` : ''}
           >
-            About
+              Work
           </NavLink>
         </li>
         <li>

@@ -9,7 +9,9 @@ export default function Resume() {
   return (
     <Layout>
       <div className={layout['page-container']}>
-        <h1 className={layout['page-title']}>My Experience</h1>
+        <div className={layout['title-container']}>
+          <h1 className={layout['page-title']}>My Experience</h1>
+        </div>
         <div className={styles['content-container']}>
           <div className={styles['button-container']}>
             <ResumeButton />

@@ -3,8 +3,18 @@
 
 .nav-container {
   flex-grow: 0;
+  // background-color: colors.$offwhite-transparent;
+  width: 100%;
+  position: fixed;
+  top:0;
   display: flex;
   justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
 .logo {
@@ -16,8 +26,10 @@
   list-style: none;
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 24px;
   padding: 0;
+  border-radius: 48px;
+  background-color: colors.$offwhite-light-transparent;
 
   li {
       @include fonts.nav-font;
@@ -30,10 +42,12 @@
   }
 
   a:hover {
-    background-color: colors.$nav-hover;
+    // background-color: colors.$offwhite-dark-transparent;
+    background-color: colors.$green-light-transparent2;
     }
 
   a.active {
-    background-color: colors.$nav-selected;
+    // background-color: colors.$offwhite-dark;
+    background-color: colors.$green-light-transparent1;
   }
 }
