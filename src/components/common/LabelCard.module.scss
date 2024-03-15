@@ -2,11 +2,8 @@
 @use '../../styles/fonts';
 
 .label-card {
-  height: 48px;
-  width: 120px;
-  background-color: colors.$offwhite-light;
-  border-radius: 8px;
-  // margin: 8px;
+  background-color: colors.$green-light;
+  border-radius:24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,4 +11,5 @@
 
 .label-text {
   @include fonts.label-font;
+  padding: 8px 24px 8px 24px;
 }
