@@ -30,6 +30,12 @@
 }
 
 .text-container {
+  min-height: 500px; //remove after shortening slalom content
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-box {
   background-color: colors.$offwhite-light;
   padding: 16px 16px 16px 32px;
   border-radius: 8px;
@@ -37,7 +43,7 @@
   h2 {
     @include fonts.tab-content-title;
   }
-
+  
   p {
     @include fonts.body-font;
   }
