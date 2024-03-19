@@ -29,7 +29,6 @@
 }
 
 @mixin inter {
-  font-size: 24px;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto; //remove?
   font-style: normal; //remove?
@@ -77,6 +76,13 @@
   font-weight: 400;
 }
 
+@mixin body-font-small {
+  @include inter;
+  font-size: 16px;
+  color: colors.$green;
+  font-weight: 400;
+}
+
 @mixin label-font {
   @include inter;
   font-size: 14px;
@@ -86,23 +92,23 @@
 
 @mixin button-font {
   @include inter;
-  font-size: 20px;
+  font-size: 16px;
   color: colors.$offwhite;
   font-weight: 400;
 }
 
-@mixin tab-font {
-  @include fraunces;
-  font-size: 20px;
-  color: colors.$green;
-  font-weight: 600;
-}
+// @mixin tab-font {
+//   @include fraunces;
+//   font-size: 20px;
+//   color: colors.$green;
+//   font-weight: 600;
+// }
 
 @mixin tab-content-title {
-  @include inter;
-  font-size: 20px;
-  color: colors.$green;
+  @include fraunces;
+  font-size: 28px;
   font-weight: 600;
+  color: colors.$green;
 }
 
 @mixin contact-text {

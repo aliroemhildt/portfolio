@@ -2,11 +2,12 @@
 @use '../../styles/colors';
 @use '../../styles/mixins';
 
-.page-container {
+.content-container {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 24px 0 24px 0;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .page-title {
@@ -15,56 +16,61 @@
 }
 
 .header {
-  background-color: colors.$green;
-  padding: 0 112px 0 112px;
-}
-
-.content-container {
-  padding: 0 112px 0 112px;
-}
-
-.button-container {
+  width: 80%;
   display: flex;
-  padding: 16px 0 0 0;
+  flex-direction: column;
+}
+
+.link-container {
+  display: flex;
+  padding: 24px 0 24px 0;
+
+  a {
+    @include fonts.body-font-small;
+    padding: 0 24px 0 8px;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: colors.$green-dark
+  }
 }
 
 .tech-stack-container {
-  padding: 16px 0 24px 0;
+  width: 100%;
+  padding: 24px 0 24px 0;
 }
 
 .tech-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
 }
 
-// .card {
-
-
-//   background-color: colors.$dark-green;
-
-// }
-
-.text-container {
-
+.subheading-container {
+  width: 80%;
 }
 
 .project-subheading {
   @include fonts.project-subheading;
-  margin: 24px 0 24px 0;
+  margin: 48px 0 24px 0;
+  // color: colors.$green-light;
 }
 
 .body {
   @include fonts.body-font;
-  padding: 8px 0 8px 0;
+  width: 70%;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
-  padding: 36px 0 36px 0;
+  padding: 48px 0 48px 0;
 }
 
 .project-image {
   height: auto;
-  width: 80%;
+  // width: 80%;
   border-radius: 16px;
 }
