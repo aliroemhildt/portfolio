@@ -55,6 +55,7 @@
 .project-subheading {
   @include fonts.project-subheading;
   margin: 48px 0 24px 0;
+  // color: colors.$green-light;
 }
 
 .body {
