@@ -2,13 +2,12 @@
 @use '../../styles/colors';
 
 .intro-container {
-  // width:80%;
-  min-height: 90dvh;
+  width:80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 24px 0 0 0;
+  padding: 24px 0 112px 0;
 }
 
 .name {
@@ -48,24 +47,29 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 48px 0 0 0;
-  width: 80%;
 }
 
 .sub-title {
   @include fonts.sub-title-font;
 }
 
+.page-title {
+  @include fonts.page-title-font;
+  padding: 0 0 0 112px;
+}
+
 .skills-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 70%;
+  display: flex;
+  justify-content: center;
 }
 
 .skills-sub-container {
-  width: 70%;
   display: flex;
   flex-direction: column;
+  padding: 0 0 112px 0;
 }
 
 .top-container {
@@ -88,14 +92,14 @@
 }
 
 .image {
-  width: 40%;
+  width: 30%;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .skills-text {
-  padding: 0 0 0 36px;
-  width: 60%;
+  padding: 0 0 0 48px;
+  width: 70%;
 }
 
 .intro-text {
@@ -106,29 +110,12 @@
 }
 
 .background-container {
-  padding: 148px 0 0 0;
-  flex-grow: 1;
-  width: 100%;
-
-  h1 {
-    padding: 0 0 24px 0;
-  }
-}
-
-.body-container {
-  padding: 0 0 48px 0;
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.body-sub-container {
-  width: 70%;
 }
 
 .body-text {
   @include fonts.body-font;
-  padding: 24px 0 0 0;
   width: 100%;
 }
