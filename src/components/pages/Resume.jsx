@@ -13,11 +13,7 @@ export default function Resume() {
           <h1 className={layout['page-title']}>My Experience</h1>
         </div>
         <div className={styles['content-container']}>
-          {/* <div className={styles['button-container']}>
-            <ResumeButton />
-          </div> */}
           <div className={styles['tabs-container']}>
-            
             <Tabs>
               <div tabName='Slalom'>
                 <h2>Slalom</h2>
@@ -25,21 +21,21 @@ export default function Resume() {
                 <h3>June 2022 - Sept 2023</h3>
                 <ul>
                   <li>
-                    Collaborated with client and consultant teams to analyze, design, and deliver custom software solutions.
+                    Collaborated with client and consultant teams to analyze, design, and deliver custom software solutions
                   </li>
                   <li>
-                    GraphQL Project: migration from REST API to GraphQL for a telecommunications company, reducing technical debt and improving efficiency.
+                    <span>GraphQL Project: </span>migration from REST API to GraphQL for a telecommunications company, reducing technical debt and improving efficiency
                   </li>
                   <li>
-                    AI Frontend Project: Led the frontend development for an internal generative AI chatbot prototype using React and Azure's OpenAI service.
+                    <span>AI Frontend Project: </span>Led the frontend development for an internal generative AI chatbot prototype using React and Azure's OpenAI service
                   </li>
                   <li>
-                    QE Project: Owned all quality engineering for a greenfield government phone portal. Designed a robust test plan and collaborating with developers to establish testing strategies.
+                    <span>QE Project: </span>Owned all quality engineering for a greenfield government phone portal, designed a robust test plan, collaborated with developers to establish testing strategies
                   </li>
                 </ul>
               </div>
               <div tabName='Turing'>
-                <h2>Turing</h2>
+                <h2>Turing School of Software and Design</h2>
                 <h3>Frontend Engineering Student</h3>
                 <h3>Oct 2021 - April 2022</h3>
                 <ul>
