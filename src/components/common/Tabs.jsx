@@ -9,9 +9,7 @@ export default function Tabs({ children }) {
   return (
   <div className={styles.container}>
     <ul className={styles['tab-list']}>
-
-          <ResumeButton />
-
+      <ResumeButton />
       {children.map((tab) => (
         <li
           key={tab.props.tabName}
