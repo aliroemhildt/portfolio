@@ -28,13 +28,13 @@ export default function LynnsListProject() {
             </div>
             <div className={styles['tech-stack-container']}>
               <div className={styles['tech-list']}>
-                <LabelCard className={styles.card} text='React' />
-                <LabelCard className={styles.card} text='TypeScript' />
-                <LabelCard className={styles.card} text='React Router' />
-                <LabelCard className={styles.card} text='Sass' />
-                <LabelCard className={styles.card} text='Cypress' />
-                <LabelCard className={styles.card} text='Mocha/Chai' />
-                <LabelCard className={styles.card} text='Yelp API' />
+                <LabelCard className={styles.card} text='React' id='1' />
+                <LabelCard className={styles.card} text='TypeScript' id='2' />
+                <LabelCard className={styles.card} text='React Router' id='3' />
+                <LabelCard className={styles.card} text='Sass' id='4' />
+                <LabelCard className={styles.card} text='Cypress' id='5' />
+                <LabelCard className={styles.card} text='Mocha/Chai' id='6' />
+                <LabelCard className={styles.card} text='Yelp API' id='7' />
               </div>
             </div>
           </div>

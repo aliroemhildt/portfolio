@@ -1,6 +1,7 @@
 @use '../../styles/fonts';
 @use '../../styles/colors';
 @use '../../styles/mixins';
+@use '../../styles/breakpoints';
 
 .layout-container {
   height: 100%;
@@ -20,6 +21,22 @@
   flex-direction: column;
   align-items: center;
   padding: 140px 112px 112px 112px; //add 116px to top padding to account for navbar
+
+  @include breakpoints.xl {
+    padding: 140px 100px 100px 100px;
+  }
+
+  @include breakpoints.lg {
+    padding: 140px 96px 96px 96px;
+  }
+
+  @include breakpoints.md {
+    padding: 140px 52px 52px 52px;
+  } 
+
+  @include breakpoints.sm {
+    padding: 140px 48px 48px 48px;
+  }
 }
 
 .title-container {
@@ -31,4 +48,8 @@
 .page-title {
   @include fonts.page-title-font;
   padding: 0 0 48px 0;
+
+  @include breakpoints.lg {
+    padding: 0 0 24px 0;
+  }
 }

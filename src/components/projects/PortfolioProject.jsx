@@ -20,10 +20,10 @@ export default function PortfolioProject() {
             </div>
             <div className={styles['tech-stack-container']}>
               <div className={styles['tech-list']}>
-                <LabelCard className={styles.card} text='React' />
-                <LabelCard className={styles.card} text='React Router' />
-                <LabelCard className={styles.card} text='Sass' />
-                <LabelCard className={styles.card} text='Netlify' />
+                <LabelCard className={styles.card} text='React' id='1' />
+                <LabelCard className={styles.card} text='React Router' id='2' />
+                <LabelCard className={styles.card} text='Sass' id='3' />
+                <LabelCard className={styles.card} text='Netlify' id='4' />
               </div>
             </div>
           </div>

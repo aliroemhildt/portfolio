@@ -1,5 +1,6 @@
 @use '../../styles/fonts';
 @use '../../styles/colors';
+@use '../../styles/breakpoints';
 
 .nav-container {
   flex-grow: 0;
@@ -8,6 +9,13 @@
   top:0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @include breakpoints.lg {
+    background-color: colors.$green;
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .logo-container {
@@ -19,6 +27,43 @@
 .logo {
   margin: 16px;
   height: 48px;
+}
+
+.green {
+  @include breakpoints.lg {
+    display: none;
+  }
+}
+  
+.white {
+  display: none;
+
+  @include breakpoints.lg {
+    display:block
+  }
+}
+
+.hamburger-menu {
+  display: none;
+
+  @include breakpoints.lg {
+    width: 2.75rem;
+    height: 2rem;
+    margin: 1rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    span {
+      height: 0.5rem;
+      width: 100%;
+      background-color: colors.$offwhite;
+      border-radius: 0.75rem;
+    }
+  }
 }
 
 .nav-list {
@@ -33,6 +78,8 @@
   li {
       @include fonts.nav-font;
       margin: 16px;
+      padding: 8px 32px 8px 32px;
+      border-radius: 32px;
     }
 
   a {
@@ -46,6 +93,33 @@
 
   a.active {
     color: colors.$green-light;
+  }
 
+  @include breakpoints.lg {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: transparent;
+    margin: 0;
+
+    .open {
+      display: block;
+    }
+
+    li {
+      color: colors.$offwhite;
+    }
+
+    a:hover {
+      background-color: colors.$green-light;
+    }
+
+    a.active {
+      color: colors.$green-dark;
+    } 
   }
 }
+
+ .open {
+   display: flex;
+ }

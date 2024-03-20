@@ -17,9 +17,11 @@ export default function About() {
       <div className={layout['page-container']}>
         <div className={styles['intro-container']}>
           <h1 className={styles.name}>Ali Roemhildt</h1>
-          <p className={styles.bio}>
-            I'm a <span className={styles.bold}>software engineer</span> with a passion for <span className={styles.bold}>frontend development</span> and creating thoughtful, engaging user experiences
-          </p>
+          <div className={styles['bio-cont']}>
+            <p className={styles.bio}>
+              I'm a <span className={styles.bold}>software engineer</span> with a passion for <span className={styles.bold}>frontend development</span> and creating thoughtful, engaging user experiences
+            </p>
+          </div>
           <button className={styles['scroll-button']} onClick={scrollTo}>
             <p className={styles['sub-title']}>get to know me</p>
             <img className={styles.arrow} src={arrow} alt='arrow icon' />
@@ -33,16 +35,16 @@ export default function About() {
             <div className={styles['skills-sub-container']}>
               <div className={styles['top-container']}>
                 <div className={styles['label-cards']}>
-                  <LabelCard text='JavaScript' />
-                  <LabelCard text='TypeScript' />
-                  <LabelCard text='React' />
-                  <LabelCard text='HTML' />
-                  <LabelCard text='CSS' />
-                  <LabelCard text='GraphQL' />
-                  <LabelCard text='Git' />
-                  <LabelCard text='REST' />
-                  <LabelCard text='Accessibility' />
-                  <LabelCard text='Testing' />
+                  <LabelCard text='JavaScript' id='1' />
+                  <LabelCard text='TypeScript' id='2' />
+                  <LabelCard text='React' id='3' />
+                  <LabelCard text='HTML' id='4' />
+                  <LabelCard text='CSS' id='5' />
+                  <LabelCard text='GraphQL' id='6' />
+                  <LabelCard text='Git' id='7' />
+                  <LabelCard text='REST' id='8' />
+                  <LabelCard text='Accessibility' id='9' />
+                  <LabelCard text='Testing' id='10' />
                 </div>
               </div>
               <div className={styles['bottom-container']}>
