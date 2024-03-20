@@ -21,7 +21,7 @@
 
 @mixin fraunces {
   font-family: "Fraunces", serif;
-  font-optical-sizing: auto; //remove?
+  font-optical-sizing: auto;
   font-style: italic;
   font-variation-settings:
     "SOFT" 50,
@@ -30,8 +30,8 @@
 
 @mixin inter {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto; //remove?
-  font-style: normal; //remove?
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 @mixin name-font {
@@ -51,8 +51,8 @@
 @mixin sub-title-font {
   @include fraunces;
   font-size: 24px;
-  font-weight: 600;
   color: colors.$green;
+  font-weight: 600;
 }
 
 @mixin page-title-font {
@@ -64,7 +64,7 @@
 
 @mixin nav-font {
   @include fraunces;
-  font-size: 18px;
+  font-size: 20px;
   color: colors.$green;
   font-weight: 600;
 }
@@ -83,39 +83,32 @@
   font-weight: 400;
 }
 
+@mixin body-font-large {
+  @include inter;
+  font-size: 24px;
+  color: colors.$green;
+  font-weight: 400;
+}
+
 @mixin label-font {
   @include inter;
-  font-size: 14px;
+  font-size: 16px;
   color: colors.$offwhite-light;
   font-weight: 400;
 }
 
 @mixin button-font {
   @include inter;
-  font-size: 16px;
+  font-size: 18px;
   color: colors.$offwhite;
   font-weight: 400;
 }
 
-// @mixin tab-font {
-//   @include fraunces;
-//   font-size: 20px;
-//   color: colors.$green;
-//   font-weight: 600;
-// }
-
 @mixin tab-content-title {
   @include fraunces;
   font-size: 28px;
+  color: colors.$green;
   font-weight: 600;
-  color: colors.$green;
-}
-
-@mixin contact-text {
-  @include inter;
-  font-size: 24px;
-  color: colors.$green;
-  font-weight: 400;
 }
 
 @mixin contact-link-label {
@@ -125,25 +118,11 @@
   font-weight: 600;
 }
 
-@mixin contact-link {
-  @include inter;
-  font-size: 18px;
-  color: colors.$green;
-  font-weight: 400;
-}
-
 @mixin project-card-title {
   @include fraunces;
   font-size: 36px;
   color: colors.$green;
   font-weight: 600;
-}
-
-@mixin project-card-description {
-  @include inter;
-  font-size: 18px;
-  color: colors.$green;
-  font-weight: 400;
 }
 
 @mixin project-subheading {
