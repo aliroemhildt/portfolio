@@ -28,7 +28,7 @@ export default function Work() {
                 id='rancidtomatillos'
                 title={'Rancid Tomatillos'}
                 description={'Movie Reviews & Ratings'}
-                labels={['React', 'Data Cleaning', 'Express']}
+                labels={['React', 'Clean Data', 'Express']}
               />
               <ProjectCard
                 id='overlookhotel'

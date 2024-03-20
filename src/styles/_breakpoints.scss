@@ -1,35 +1,3 @@
-// @mixin sm {
-//   @media screen and (max-width: 576px) {
-//       @content;
-//     }
-// }
-
-// @mixin md {
-//   @media screen and (min-width: 577px) and (max-width: 768px) {
-//     @content;
-//   }
-// }
-
-// @mixin lg {
-//   @media screen and (min-width: 769px) and (max-width: 992px) {
-//     @content;
-//   }
-// }
-
-// @mixin xl {
-//   @media screen and (min-width: 993px) and (max-width: 1250px) {
-//     @content;
-//   }
-// }
-
-// // designed for 1440 screen
-
-// @mixin xxl {
-//   @media screen and (min-width: 1600px) {
-//     @content;
-//   }
-// }
-
 @mixin sm {
   @media screen and (max-width: 576px) {
     @content;

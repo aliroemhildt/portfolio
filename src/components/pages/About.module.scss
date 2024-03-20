@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
+  justify-content: center;
   padding: 24px 0 112px 0;
 }
 
@@ -85,6 +85,11 @@
   display: flex;
   width: 100%;
   padding: 72px 0 0 0;
+
+  @include breakpoints.lg {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .label-cards {
@@ -99,11 +104,20 @@
   width: 30%;
   object-fit: cover;
   border-radius: 8px;
+
+  @include breakpoints.lg {
+    width: 75%;
+    margin: 0 0 48px 0;
+  }
 }
 
 .skills-text {
   padding: 0 0 0 48px;
   width: 70%;
+  
+  @include breakpoints.lg {
+    width: 100%;
+  }
 }
 
 .intro-text {
