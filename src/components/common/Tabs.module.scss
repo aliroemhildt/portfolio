@@ -1,9 +1,14 @@
 @use '../../styles/colors';
 @use '../../styles/fonts';
+@use '../../styles/breakpoints';
 
 .container {
   display: flex;
   height: 100%;
+
+  @include breakpoints.lg {
+    flex-direction: column;
+  }
 }
 
 .tab-list {
@@ -11,6 +16,12 @@
   list-style: none;
   flex-direction: column;
   margin: 0;
+  padding: 0;
+
+  @include breakpoints.lg {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .tab-item {
@@ -18,6 +29,16 @@
   width: 8em;
   padding: 8px;
   border-left: 4px solid colors.$offwhite-dark;
+
+  @include breakpoints.lg {
+    border-left: none;
+    border-top: 4px solid colors.$offwhite-dark;
+  }
+
+  @include breakpoints.md {
+    width: auto;
+    padding: 8px 22px 8px 0;
+  }
 }
 
 .tab-item:hover {
@@ -26,6 +47,11 @@
 
 .current {
   border-left: 4px solid colors.$green;
+
+  @include breakpoints.lg {
+    border-left: none;
+    border-top: 4px solid colors.$green;
+  }
 }
 
 .text-container {
@@ -59,5 +85,9 @@
 
   span {
     font-weight: 600;
+  }
+
+  @include breakpoints.lg {
+    margin: 0;
   }
 }

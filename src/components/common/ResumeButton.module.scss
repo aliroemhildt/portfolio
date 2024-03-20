@@ -1,10 +1,19 @@
 @use '../../styles/colors';
 @use '../../styles/fonts';
 @use '../../styles/mixins';
+@use '../../styles/breakpoints';
 
 .resume-button {
   @include mixins.button;
   margin: 36px 0 24px 0;
+
+  @include breakpoints.lg {
+    margin: 32px 48px 32px 0;
+  }
+
+  @include breakpoints.md {
+    margin: 24px 24px 24px 0;
+  }
 }
 
 .resume-button:hover {

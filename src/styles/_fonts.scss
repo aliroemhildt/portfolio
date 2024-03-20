@@ -195,14 +195,6 @@
   @include breakpoints.lg {
     font-size: 14px;
   }
-
-  @include breakpoints.md {
-    font-size: 12px;
-  }
-
-  @include breakpoints.sm {
-    font-size: 12px;
-  }
 }
 
 @mixin tab-content-title {
