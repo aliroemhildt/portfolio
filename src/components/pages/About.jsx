@@ -17,9 +17,11 @@ export default function About() {
       <div className={layout['page-container']}>
         <div className={styles['intro-container']}>
           <h1 className={styles.name}>Ali Roemhildt</h1>
-          <p className={styles.bio}>
-            I'm a <span className={styles.bold}>software engineer</span> with a passion for <span className={styles.bold}>frontend development</span> and creating thoughtful, engaging user experiences
-          </p>
+          <div className={styles['bio-container']}>
+            <p className={styles.bio}>
+              I'm a <span className={styles.bold}>software engineer</span> with a passion for <span className={styles.bold}>frontend development</span> and creating thoughtful, engaging user experiences
+            </p>
+          </div>
           <button className={styles['scroll-button']} onClick={scrollTo}>
             <p className={styles['sub-title']}>get to know me</p>
             <img className={styles.arrow} src={arrow} alt='arrow icon' />

@@ -41,13 +41,21 @@
   color: colors.$green;
   font-weight: 700;
 
-  @include breakpoints.sm {
-    font-size: 136px;
-  };
+  @include breakpoints.xl {
+    font-size: 112px;
+  }
 
-    // @include breakpoints.md {
-    //   font-size: 12px;
-    // }
+  @include breakpoints.lg {
+    font-size: 88px;
+  }
+
+  @include breakpoints.md {
+    font-size: 66px;
+  }
+
+  @include breakpoints.sm {
+    font-size: 58px;
+  }
 }
 
 @mixin bio-font {
@@ -55,6 +63,22 @@
   font-size: 24px;
   color: colors.$green;
   font-weight: 400;
+
+  @include breakpoints.xl {
+    font-size: 20px;
+  }
+
+  @include breakpoints.lg {
+    font-size: 18px;
+  }
+
+  @include breakpoints.md {
+    font-size: 16px;
+  }
+
+  @include breakpoints.sm {
+    font-size: 14px;
+  }
 }
 
 @mixin sub-title-font {
@@ -62,6 +86,22 @@
   font-size: 24px;
   color: colors.$green;
   font-weight: 600;
+
+  @include breakpoints.xl {
+    font-size: 20px;
+  }
+
+  @include breakpoints.lg {
+    font-size: 18px;
+  }
+
+  @include breakpoints.md {
+    font-size: 16px;
+  }
+
+  @include breakpoints.sm {
+    font-size: 14px;
+  }
 }
 
 @mixin page-title-font {
@@ -69,6 +109,22 @@
   font-size: 72px;
   color: colors.$green;
   font-weight: 600;
+
+  @include breakpoints.xl {
+   font-size: 68px;
+  }
+
+  @include breakpoints.lg {
+    font-size: 52px; 
+  }
+
+  @include breakpoints.md {
+    font-size: 48px;
+  }
+
+  @include breakpoints.sm {
+    font-size: 44px;
+  }
 }
 
 @mixin nav-font {
@@ -105,9 +161,21 @@
   color: colors.$offwhite-light;
   font-weight: 400;
 
+  @include breakpoints.xl {
+    font-size: 14px;
+  }
+
+  @include breakpoints.lg {
+    font-size: 12px;
+  }
+
   @include breakpoints.md {
     font-size: 12px;
-  };
+  }
+
+  @include breakpoints.sm {
+    font-size: 10px;
+  }
 }
 
 @mixin button-font {
@@ -115,6 +183,22 @@
   font-size: 18px;
   color: colors.$offwhite;
   font-weight: 400;
+
+  @include breakpoints.xl {
+    font-size: 16px;
+  }
+
+  @include breakpoints.lg {
+    font-size: 14px;
+  }
+
+  @include breakpoints.md {
+    font-size: 12px;
+  }
+
+  @include breakpoints.sm {
+    font-size: 12px;
+  }
 }
 
 @mixin tab-content-title {
