@@ -25,12 +25,12 @@ export default function OverLookHotelProject() {
             </div>
             <div className={styles['tech-stack-container']}>
               <div className={styles['tech-list']}>
-                <LabelCard className={styles.card} text='JavaScript' />
-                <LabelCard className={styles.card} text='HTML' />
-                <LabelCard className={styles.card} text='Sass' />
-                <LabelCard className={styles.card} text='Mocha/Chai' />
-                <LabelCard className={styles.card} text='ESLint' />
-                <LabelCard className={styles.card} text='REST' />
+                <LabelCard className={styles.card} text='JavaScript' id='1' />
+                <LabelCard className={styles.card} text='HTML' id='2' />
+                <LabelCard className={styles.card} text='Sass' id='3' />
+                <LabelCard className={styles.card} text='Mocha/Chai' id='4' />
+                <LabelCard className={styles.card} text='ESLint' id='5' />
+                <LabelCard className={styles.card} text='REST' id='6' />
               </div>
             </div>
           </div>

@@ -34,14 +34,14 @@ export default function ChartToppersProject() {
             </div>
             <div className={styles['tech-stack-container']}>
               <div className={styles['tech-list']}>
-                <LabelCard className={styles.card} text='React' />
-                <LabelCard className={styles.card} text='React Router' />
-                <LabelCard className={styles.card} text='Sass' />
-                <LabelCard className={styles.card} text='Cypress' />
-                <LabelCard className={styles.card} text='Mocha/Chai' />
-                <LabelCard className={styles.card} text='Express' />
-                <LabelCard className={styles.card} text='Node.js' />
-                <LabelCard className={styles.card} text='REST' />
+                <LabelCard className={styles.card} text='React' id='1' />
+                <LabelCard className={styles.card} text='React Router' id='2' />
+                <LabelCard className={styles.card} text='Sass' id='3' />
+                <LabelCard className={styles.card} text='Cypress' id='4' />
+                <LabelCard className={styles.card} text='Mocha/Chai' id='5' />
+                <LabelCard className={styles.card} text='Express' id='6' />
+                <LabelCard className={styles.card} text='Node.js' id='7' />
+                <LabelCard className={styles.card} text='REST' id='8' />
               </div>
             </div>
           </div>

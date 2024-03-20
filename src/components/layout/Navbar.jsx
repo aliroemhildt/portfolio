@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 import logo from '../../assets/logo.svg';
@@ -6,6 +6,15 @@ import logoWhite from '../../assets/logo-white.svg';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const hide = (e) => {
+    console.log(e.target)
+    // setMenuOpen(false);
+  }
+
+  useEffect (() => {
+    window.addEventListener('click', (e) => hide(e))
+  }, [])
 
   return (
     <nav className={styles['nav-container']}>

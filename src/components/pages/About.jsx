@@ -35,16 +35,16 @@ export default function About() {
             <div className={styles['skills-sub-container']}>
               <div className={styles['top-container']}>
                 <div className={styles['label-cards']}>
-                  <LabelCard text='JavaScript' />
-                  <LabelCard text='TypeScript' />
-                  <LabelCard text='React' />
-                  <LabelCard text='HTML' />
-                  <LabelCard text='CSS' />
-                  <LabelCard text='GraphQL' />
-                  <LabelCard text='Git' />
-                  <LabelCard text='REST' />
-                  <LabelCard text='Accessibility' />
-                  <LabelCard text='Testing' />
+                  <LabelCard text='JavaScript' id='1' />
+                  <LabelCard text='TypeScript' id='2' />
+                  <LabelCard text='React' id='3' />
+                  <LabelCard text='HTML' id='4' />
+                  <LabelCard text='CSS' id='5' />
+                  <LabelCard text='GraphQL' id='6' />
+                  <LabelCard text='Git' id='7' />
+                  <LabelCard text='REST' id='8' />
+                  <LabelCard text='Accessibility' id='9' />
+                  <LabelCard text='Testing' id='10' />
                 </div>
               </div>
               <div className={styles['bottom-container']}>
