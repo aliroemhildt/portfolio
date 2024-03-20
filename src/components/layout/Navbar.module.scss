@@ -36,6 +36,8 @@
 }
   
 .white {
+  display: none;
+
   @include breakpoints.lg {
     display:block
   }

@@ -1,5 +1,6 @@
 @use '../../styles/colors';
 @use '../../styles/fonts';
+@use '../../styles/breakpoints';
 
 .grid-item {
   height: 216px;
@@ -23,6 +24,10 @@
 .card-container:hover {
   cursor: pointer;
   transform: translateY(-0.25em);
+
+  @include breakpoints.lg {
+    transform: none;
+  }
 }
 
 .title {
