@@ -1,6 +1,7 @@
 @use '../../styles/fonts';
 @use '../../styles/colors';
 @use '../../styles/mixins';
+@use '../../styles/breakpoints';
 
 .content-container {
   height: 100%;
@@ -8,11 +9,6 @@
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
-}
-
-.page-title {
-  @include fonts.page-title-font;
-  padding: 0 0 0 112px;
 }
 
 .header {
@@ -33,6 +29,14 @@
 
   a:hover {
     color: colors.$green-dark
+  }
+
+  @include breakpoints.lg {
+    flex-direction: column;
+    
+    a {
+      padding: 18px 0 0 0;
+    }
   }
 }
 

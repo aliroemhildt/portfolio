@@ -48,4 +48,8 @@
 .page-title {
   @include fonts.page-title-font;
   padding: 0 0 48px 0;
+
+  @include breakpoints.lg {
+    padding: 0 0 24px 0;
+  }
 }
