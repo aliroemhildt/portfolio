@@ -1,4 +1,5 @@
 @use './colors';
+@use './breakpoints';
 
 // .fraunces-<uniquifier> {
 //   font-family: "Fraunces", serif;
@@ -39,6 +40,14 @@
   font-size: 160px;
   color: colors.$green;
   font-weight: 700;
+
+  @include breakpoints.sm {
+    font-size: 136px;
+  };
+
+    // @include breakpoints.md {
+    //   font-size: 12px;
+    // }
 }
 
 @mixin bio-font {
@@ -95,6 +104,10 @@
   font-size: 16px;
   color: colors.$offwhite-light;
   font-weight: 400;
+
+  @include breakpoints.md {
+    font-size: 12px;
+  };
 }
 
 @mixin button-font {
