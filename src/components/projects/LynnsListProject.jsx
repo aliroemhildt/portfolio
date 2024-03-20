@@ -63,7 +63,7 @@ export default function LynnsListProject() {
             This project helped me build my skills in React and TypeScript, as well as helping me learn how to learn. Going through the process of implementing a technology I had never used helped me recognize what type of learning process works well for me. I do well when I can dive into documentation, look at examples, and then learn through trial and error and asking a lot of questions. I also gained self-awareness for when I am struggling productively and when it’s time to ask for help.
           </p>
           <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={lynnslistImg} />
+            <img className={styles['project-image']} src={lynnslistImg} alt='screenshot of the Lynns List application' />
           </div>
         </div>
       </div>

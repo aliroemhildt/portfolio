@@ -1,5 +1,6 @@
 @use '../../styles/fonts';
 @use '../../styles/colors';
+@use '../../styles/mixins';
 
 .layout-container {
   height: 100%;
@@ -9,7 +10,7 @@
 
 .main-container {
   flex-grow: 1;
-  // height: 100%;
+  @include mixins.background-gradient;
 }
 
 .page-container {

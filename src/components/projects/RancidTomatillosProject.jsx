@@ -66,7 +66,7 @@ export default function RancidTomatillosProject() {
             The goals of this project were to gain competency with React fundamentals and async JavaScript, get practice with data cleaning and error handling, as well as implementing several new technologies. This project was my first time working with React Router, Cypress end-to-end testing, Express, and deploying to heroku (deployments have since been moved to Netlify). I also went through the intentional process of building out this application with conditional rendering, then refactoring to replace the conditional rendering with React Router. Although time-consuming, this process gave me a much deeper understanding of how React Router works under the hood.
           </p>
           <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={rancidtomatillosImg} />
+            <img className={styles['project-image']} src={rancidtomatillosImg} alt='screenshot of the Rancid Tomatillos application' />
           </div>
         </div>
       </div>

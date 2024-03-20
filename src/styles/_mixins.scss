@@ -13,3 +13,7 @@
   cursor: pointer;
   background-color: colors.$green-dark;
 }
+
+@mixin background-gradient {
+  background-image: linear-gradient(colors.$offwhite, colors.$offwhite-gradient); 
+}

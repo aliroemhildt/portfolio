@@ -22,7 +22,7 @@ export default function About() {
           </p>
           <button className={styles['scroll-button']} onClick={scrollTo}>
             <p className={styles['sub-title']}>get to know me</p>
-            <img className={styles.arrow} src={arrow} />
+            <img className={styles.arrow} src={arrow} alt='arrow icon' />
           </button>
         </div>
         <div className={styles['content-container']} ref={aboutSection}>

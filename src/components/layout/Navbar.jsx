@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className={styles['nav-container']}>
       <div className={styles['logo-container']}>
         <NavLink to='/' reloadDocument>
-          <img className={styles.logo} src={logo} alt='logo' />
+          <img className={styles.logo} src={logo} alt='cursive letter A logo' />
         </NavLink>
       </div>
       <ul className={styles['nav-list']}>
