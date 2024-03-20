@@ -44,7 +44,7 @@ export default function PortfolioProject() {
             description...
           </p>
           <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={portfolioImg} />
+            <img className={styles['project-image']} src={portfolioImg} alt='' />
           </div>
         </div>
       </div>

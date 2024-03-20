@@ -54,7 +54,7 @@ export default function OverLookHotelProject() {
             The goals of this project were to learn OOP fundamentals with Vanilla JS classes, unit testing and TDD, learning SCSS, accessibility, fetching from a REST API
           </p>
           <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={overlookhotelImg} />
+            <img className={styles['project-image']} src={overlookhotelImg} alt='screenshot of the Overlook Hotel application' />
           </div>
         </div>
       </div>

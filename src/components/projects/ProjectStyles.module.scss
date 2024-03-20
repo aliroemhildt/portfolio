@@ -26,7 +26,7 @@
   padding: 24px 0 24px 0;
 
   a {
-    @include fonts.body-font-small;
+    @include fonts.body-font;
     padding: 0 24px 0 8px;
     text-decoration: underline;
   }
@@ -55,7 +55,6 @@
 .project-subheading {
   @include fonts.project-subheading;
   margin: 48px 0 24px 0;
-  // color: colors.$green-light;
 }
 
 .body {

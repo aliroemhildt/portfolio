@@ -66,7 +66,7 @@ export default function ChartToppersProject() {
             The goal of this project was to gain experience with React React Router, build my own express server, work with async JavaScript, and create a responsive application.
           </p>
           <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={charttoppersImg} />
+            <img className={styles['project-image']} src={charttoppersImg} alt='screenshot of the Chart Toppers application' />
           </div>
         </div>
       </div>  
