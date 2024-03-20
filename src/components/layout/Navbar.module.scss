@@ -3,7 +3,6 @@
 
 .nav-container {
   flex-grow: 0;
-  // background-color: colors.$offwhite-transparent;
   width: 100%;
   position: fixed;
   top:0;
@@ -42,12 +41,11 @@
   }
 
   a:hover {
-    // background-color: colors.$offwhite-dark-transparent;
-    background-color: colors.$green-light-transparent2;
+    background-color: colors.$offwhite;
     }
 
   a.active {
-    // background-color: colors.$offwhite-dark;
-    background-color: colors.$green-light-transparent1;
+    color: colors.$green-light;
+
   }
 }

@@ -30,7 +30,7 @@
 }
 
 .description {
-  @include fonts.project-card-description;
+  @include fonts.body-font;
   padding: 8px 0 16px 0;
   max-width: 500px;
 }
