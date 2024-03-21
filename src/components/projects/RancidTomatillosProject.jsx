@@ -45,17 +45,24 @@ export default function RancidTomatillosProject() {
               </div>
             </div>
           </div>
+          <div className={styles['image-container']}>
+            <img className={styles['project-image']} src={rancidtomatillosImg} alt='screenshot of the Rancid Tomatillos application' />
+          </div>
           <div className={styles['subheading-container']}>
             <p className={`${styles['project-subheading']} ${styles.overview}`}>
               Overview
             </p>
           </div>
           <p className={styles.body}>
-            A multi-page movie review app that allows users to view movie details and leave their own rating
+            This is a web app that provides a list of movies, their Rancid Tomatillo rating, and details about the movie's runtime, synopsis, genre, budget, and revenue. Keep track of your opinion on each movie by logging in and leaving your own rating.
           </p>
           <br />
           <p className={styles.body}>
             This was a pair project completed during my time at Turing School of Software and Design. Built alongside one other student over the course of two weeks.
+          </p>
+          <br />
+          <p className={styles.body}>
+            Check out the source code for a full walk through and visit the deployed app to try it out yourself.
           </p>
           <div className={styles['subheading-container']}>
             <p className={`${styles['project-subheading']} ${styles.overview}`}>
@@ -63,11 +70,18 @@ export default function RancidTomatillosProject() {
             </p>
           </div>
           <p className={styles.body}>
-            The goals of this project were to gain competency with React fundamentals and async JavaScript, get practice with data cleaning and error handling, as well as implementing several new technologies. This project was my first time working with React Router, Cypress end-to-end testing, Express, and deploying to heroku (deployments have since been moved to Netlify). I also went through the intentional process of building out this application with conditional rendering, then refactoring to replace the conditional rendering with React Router. Although time-consuming, this process gave me a much deeper understanding of how React Router works under the hood.
+            <ul className={styles.goals}>
+              <li>Gain competency with React fundamentals and asynchronous JavaScript</li>
+              <li>Practice refactoring</li>
+              <li>Create a multi-page UI using Router</li>
+              <li>Build and deploy an API using Express</li>
+              <li>Learn and implement Cypress end to end testing</li>
+              <li>Data cleaning & error handling</li>
+            </ul>
           </p>
-          <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={rancidtomatillosImg} alt='screenshot of the Rancid Tomatillos application' />
-          </div>
+          {/* <p className={styles.body}>
+            The goals of this project were to gain competency with React fundamentals and async JavaScript, get practice with data cleaning and error handling, as well as implementing several new technologies. This project was my first time working with React Router, Cypress end-to-end testing, Express, and deploying to heroku (deployments have since been moved to Netlify). I also went through the intentional process of building out this application with conditional rendering, then refactoring to replace the conditional rendering with React Router. Although time-consuming, this process gave me a much deeper understanding of how React Router works under the hood.
+          </p> */}
         </div>
       </div>
     </Layout>

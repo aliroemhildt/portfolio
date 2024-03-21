@@ -38,12 +38,14 @@ export default function ChartToppersProject() {
                 <LabelCard className={styles.card} text='React Router' id='2' />
                 <LabelCard className={styles.card} text='Sass' id='3' />
                 <LabelCard className={styles.card} text='Cypress' id='4' />
-                <LabelCard className={styles.card} text='Mocha/Chai' id='5' />
-                <LabelCard className={styles.card} text='Express' id='6' />
-                <LabelCard className={styles.card} text='Node.js' id='7' />
-                <LabelCard className={styles.card} text='REST' id='8' />
+                <LabelCard className={styles.card} text='Express' id='5' />
+                <LabelCard className={styles.card} text='Node.js' id='6' />
+                <LabelCard className={styles.card} text='REST' id='7' />
               </div>
             </div>
+          </div>
+          <div className={styles['image-container']}>
+            <img className={styles['project-image']} src={charttoppersImg} alt='screenshot of the Chart Toppers application' />
           </div>
           <div className={styles['subheading-container']}>
             <p className={styles['project-subheading']}>
@@ -51,11 +53,15 @@ export default function ChartToppersProject() {
             </p>
           </div>
           <p className={styles.body}>
-            Chart Toppers is a multi-page game where players are quizzed on the Billboard chart-topping songs from the 1980's to the 2020's.
+            Put your musical knowledge to the test and see if you can guess which song was the Billboard #1 hit of the year. Chart Toppers is a multi-page game where players are quizzed on the Billboard chart-topping songs from the 1980's to the 2020's.
           </p>
           <br />
           <p className={styles.body}>
             This was a solo project completed during my time at Turing School of Software & Design, completed over the course of one week.
+          </p>
+          <br />
+          <p className={styles.body}>
+            Check out the source code for a full walk through and visit the deployed app to try it out yourself.
           </p>
           <div className={styles['subheading-container']}>
             <p className={styles['project-subheading']}>
@@ -63,11 +69,19 @@ export default function ChartToppersProject() {
             </p>
           </div>
           <p className={styles.body}>
-            The goal of this project was to gain experience with React React Router, build my own express server, work with async JavaScript, and create a responsive application.
+            <ul className={styles.goals}>
+              <li>React fundamentals and implementing Hooks</li>
+              <li>Dynamic routes with React Router v6</li>
+              <li>Asynchronous JavaScript</li>
+              <li>End to end testing with Cypress</li>
+              <li>Project managment from ideation and user stories to execution and deployment</li>
+              <li>Building and deploying an Express API</li>
+            </ul>
           </p>
-          <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={charttoppersImg} alt='screenshot of the Chart Toppers application' />
-          </div>
+          {/* <p className={styles.body}>
+            The goal of this project was to gain experience with React React Router, build my own express server, work with async JavaScript, and create a responsive application.
+          </p> */}
+          
         </div>
       </div>  
     </Layout>
