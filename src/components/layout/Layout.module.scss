@@ -8,10 +8,21 @@
   display: flex;
   flex-direction: column;
   @include mixins.background-gradient;
+
+
+  @include breakpoints.xxl {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 }
 
 .main-container {
   flex-grow: 1;
+
+  @include breakpoints.xxl {
+    width: 70%;
+  }
 }
 
 .page-container {
