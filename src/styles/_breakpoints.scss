@@ -25,7 +25,7 @@
 // designed for 1440 screen
 
 @mixin xxl {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1800px) {
     @content;
   }
 }
