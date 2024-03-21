@@ -1,11 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import LabelCard from '../common/LabelCard';
 import Layout from '../layout/Layout';
 import layout from '../layout/Layout.module.scss';
 import styles from './ProjectStyles.module.scss';
-import lynnslistImg from '../../assets/lynnslist.png';
+import Img from '../../assets/lynnslist.png';
+import ImgSmall from '../../assets/lynnslist-small.png';
 
 export default function LynnsListProject() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    }
+    img.src = Img;
+  }, [Img])
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -38,7 +49,14 @@ export default function LynnsListProject() {
             </div>
           </div>
           <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={lynnslistImg} alt='screenshot of the Lynns List application' />
+            {
+              !imageLoaded &&
+              <img className={styles['project-image']} src={ImgSmall} />
+            }
+            {
+              imageLoaded &&
+              <img className={styles['project-image']} src={Img} alt='screenshot of the Lynns List application' />
+            }
           </div>
           <div className={styles['subheading-container']}>
             <p className={styles['project-subheading']}>

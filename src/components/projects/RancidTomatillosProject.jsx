@@ -1,11 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import LabelCard from '../common/LabelCard';
 import Layout from '../layout/Layout';
 import layout from '../layout/Layout.module.scss';
 import styles from './ProjectStyles.module.scss';
-import rancidtomatillosImg from '../../assets/rancidtomatillos.png';
+import Img from '../../assets/rancidtomatillos.png';
+import ImgSmall from '../../assets/rancidtomatillos-small.png';
 
 export default function RancidTomatillosProject() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    }
+    img.src = Img;
+  },[Img])
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -46,7 +57,14 @@ export default function RancidTomatillosProject() {
             </div>
           </div>
           <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={rancidtomatillosImg} alt='screenshot of the Rancid Tomatillos application' />
+              {
+                !imageLoaded &&
+                <img className={styles['project-image']} src={ImgSmall} />
+              }
+              {
+                imageLoaded &&
+                <img className={styles['project-image']} src={Img} alt='screenshot of the Rancid Tomatillos application' />
+              }
           </div>
           <div className={styles['subheading-container']}>
             <p className={`${styles['project-subheading']} ${styles.overview}`}>

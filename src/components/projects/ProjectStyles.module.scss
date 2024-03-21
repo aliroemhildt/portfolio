@@ -75,11 +75,13 @@
   display: flex;
   justify-content: center;
   padding: 48px 0 48px 0;
+  width: 100%;
 }
 
 .project-image {
   height: auto;
-  // width: 80%;
+  width: 100%;
   border-radius: 16px;
   border: 1px solid colors.$offwhite-dark;
+  object-fit: cover;
 }
