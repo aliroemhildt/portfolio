@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import styles from './Layout.module.scss';
 
 export default function Layout({ children }) {
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
       <Navbar />
       <main className={styles['main-container']}>
           {children}
+        <Footer />
       </main>
     </div>
   );

@@ -25,8 +25,8 @@
 }
 
 .logo {
-  margin: 16px;
-  height: 48px;
+  margin: 24px;
+  height: 56px;
 }
 
 .green {
@@ -77,8 +77,8 @@
 
   li {
       @include fonts.nav-font;
-      margin: 16px;
-      padding: 8px 32px 8px 32px;
+      // margin: 16px;
+      padding: 16px;
       border-radius: 32px;
     }
 
