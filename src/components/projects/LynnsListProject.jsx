@@ -33,10 +33,12 @@ export default function LynnsListProject() {
                 <LabelCard className={styles.card} text='React Router' id='3' />
                 <LabelCard className={styles.card} text='Sass' id='4' />
                 <LabelCard className={styles.card} text='Cypress' id='5' />
-                <LabelCard className={styles.card} text='Mocha/Chai' id='6' />
-                <LabelCard className={styles.card} text='Yelp API' id='7' />
+                <LabelCard className={styles.card} text='Yelp API' id='6' />
               </div>
             </div>
+          </div>
+          <div className={styles['image-container']}>
+            <img className={styles['project-image']} src={lynnslistImg} alt='screenshot of the Lynns List application' />
           </div>
           <div className={styles['subheading-container']}>
             <p className={styles['project-subheading']}>
@@ -44,11 +46,15 @@ export default function LynnsListProject() {
             </p>
           </div>
           <p className={styles.body}>
-            A multi-page app where users can view restaurants in Denver and save them to personalized lists.
+            An app for users to explore restaurants in Denver and keep track of what restaurants they have been to, want to visit, or create a  personalized list. This application utilizes the Yelp Fushion API to bring the latest information on restaurants in Denver.
           </p>
           <br />
           <p className={styles.body}>
             This was a group project completed during my time at Turing School of Software and Design. Built alongside 3 other students over the course of one week.
+          </p>
+          <br />
+          <p className={styles.body}>
+            Check out the source code for a full walk through and visit the deployed app to try it out yourself.
           </p>
           <div className={styles['subheading-container']}>
             <p className={`${styles['project-subheading']} ${styles.overview}`}>
@@ -56,15 +62,21 @@ export default function LynnsListProject() {
             </p>
           </div>
           <p className={styles.body}>
+            <ul className={styles.goals}>
+              <li>Learn and implement TypeScript for the first time</li>
+              <li>Gain experience with React</li>
+              <li>Accessibility audit with Lighthouse</li>
+              <li>Gain experience working on a team of developers</li>
+              <li>Project managament from ideation to execution</li>
+            </ul>
+          </p>
+          {/* <p className={styles.body}>
             The main goal of this project was to learn and implement a new technology on my own. I used TypeScript for the first time, learning as I went. This was also a great experience in working on a team of developers and following agile project management from ideation to execution.
           </p>
           <br />
           <p className={styles.body}>
             This project helped me build my skills in React and TypeScript, as well as helping me learn how to learn. Going through the process of implementing a technology I had never used helped me recognize what type of learning process works well for me. I do well when I can dive into documentation, look at examples, and then learn through trial and error and asking a lot of questions. I also gained self-awareness for when I am struggling productively and when it’s time to ask for help.
-          </p>
-          <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={lynnslistImg} alt='screenshot of the Lynns List application' />
-          </div>
+          </p> */}
         </div>
       </div>
     </Layout>

@@ -34,16 +34,24 @@ export default function OverLookHotelProject() {
               </div>
             </div>
           </div>
+          <div className={styles['image-container']}>
+            <img className={styles['project-image']} src={overlookhotelImg} alt='screenshot of the Overlook Hotel application' />
+          </div>
           <div className={styles['subheading-container']}>
             <p className={`${styles['project-subheading']} ${styles.overview}`}>
               Overview
             </p>
           </div>
           <p className={styles.body}>
-            A hotel management app for customers to view their current bookings, bill, and create new bookings
+            A hotel management tool for customers to create and view their bookings. The app includes a login page, a dashboard for a user's bookings and total bill, and a booking page to explore available rooms.
           </p>
+          <br />
           <p className={styles.body}>
             This was a solo project completed during my time at Turing School of Software and Design, completed over the course of one week.
+          </p>
+          <br />
+          <p className={styles.body}>
+            Check out the source code for a full walk through and to try out this app yourself.
           </p>
          <div className={styles['subheading-container']}>
             <p className={`${styles['project-subheading']} ${styles.overview}`}>
@@ -51,11 +59,39 @@ export default function OverLookHotelProject() {
             </p>
           </div>
           <p className={styles.body}>
-            The goals of this project were to learn OOP fundamentals with Vanilla JS classes, unit testing and TDD, learning SCSS, accessibility, fetching from a REST API
+            <ul className={styles.goals}>
+              <li>use OOP to drive code design</li>
+              <li>test driven development</li>
+              <li>error handling</li>
+              <li>styling with Sass</li>
+              <li>fetching from and posting to a REST API</li>
+            </ul>
           </p>
-          <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={overlookhotelImg} alt='screenshot of the Overlook Hotel application' />
+          {/* <div className={styles['subheading-container']}>
+            <p className={`${styles['project-subheading']} ${styles.overview}`}>
+              Object Oriented Programming
+            </p>
           </div>
+          <div className={styles['subheading-container']}>
+            <p className={`${styles['project-subheading']} ${styles.overview}`}>
+              Test Driven Development
+            </p>
+          </div>
+          <div className={styles['subheading-container']}>
+            <p className={`${styles['project-subheading']} ${styles.overview}`}>
+              Error Handling
+            </p>
+          </div>
+          <div className={styles['subheading-container']}>
+            <p className={`${styles['project-subheading']} ${styles.overview}`}>
+              Styling with Sass
+            </p>
+          </div>
+          <div className={styles['subheading-container']}>
+            <p className={`${styles['project-subheading']} ${styles.overview}`}>
+              Fetch API
+            </p>
+          </div> */}
         </div>
       </div>
     </Layout>

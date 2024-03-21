@@ -58,11 +58,16 @@
 
 .project-subheading {
   @include fonts.project-subheading;
-  margin: 48px 0 24px 0;
+  margin: 24px 0 24px 0;
 }
 
 .body {
   @include fonts.body-font;
+  width: 70%;
+}
+
+.goals {
+  padding-left: 16px;
   width: 70%;
 }
 
@@ -76,4 +81,5 @@
   height: auto;
   // width: 80%;
   border-radius: 16px;
+  border: 1px solid colors.$offwhite-dark;
 }
