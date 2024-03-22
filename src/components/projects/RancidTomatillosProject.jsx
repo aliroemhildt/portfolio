@@ -3,7 +3,7 @@ import LabelCard from '../common/LabelCard';
 import Layout from '../layout/Layout';
 import layout from '../layout/Layout.module.scss';
 import styles from './ProjectStyles.module.scss';
-import Img from '../../assets/rancidtomatillos.png';
+import Img from '../../assets/rancid-tomatillos.jpg';
 import ImgSmall from '../../assets/rancidtomatillos-small.png';
 
 export default function RancidTomatillosProject() {

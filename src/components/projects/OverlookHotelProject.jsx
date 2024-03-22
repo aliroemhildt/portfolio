@@ -3,7 +3,7 @@ import LabelCard from '../common/LabelCard';
 import Layout from '../layout/Layout';
 import layout from '../layout/Layout.module.scss';
 import styles from './ProjectStyles.module.scss';
-import Img from '../../assets/overlookhotel.png';
+import Img from '../../assets/overlook-hotel.jpg';
 import ImgSmall from '../../assets/overlookhotel-small.png';
 
 export default function OverLookHotelProject() {

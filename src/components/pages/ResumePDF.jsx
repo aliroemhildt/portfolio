@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import pdf from '../../assets/Resume.pdf';
+import pdf from '../../../public/Resume.pdf';
 import { fixPdfPageScroll, clearPdfPageScroll } from '../../utils';
 import styles from './ResumePDF.module.scss';
 

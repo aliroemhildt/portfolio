@@ -3,7 +3,7 @@ import LabelCard from '../common/LabelCard';
 import Layout from '../layout/Layout';
 import layout from '../layout/Layout.module.scss';
 import styles from './ProjectStyles.module.scss';
-import Img from '../../assets/lynnslist.png';
+import Img from '../../assets/lynns-list.jpg';
 import ImgSmall from '../../assets/lynnslist-small.png';
 
 export default function LynnsListProject() {

@@ -3,7 +3,7 @@ import LabelCard from '../common/LabelCard';
 import Layout from '../layout/Layout';
 import layout from '../layout/Layout.module.scss';
 import styles from './ProjectStyles.module.scss';
-import Img from '../../assets/charttoppers.png';
+import Img from '../../assets/chart-toppers.jpg';
 import ImgSmall from '../../assets/charttoppers-small.png';
 
 export default function ChartToppersProject() {
