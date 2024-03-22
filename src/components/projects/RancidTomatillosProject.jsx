@@ -11,10 +11,10 @@ export default function RancidTomatillosProject() {
 
   useEffect(() => {
     const img = new Image();
+    img.src = Img;
     img.onload = () => {
       setImageLoaded(true);
     }
-    img.src = Img;
   },[Img])
 
   useEffect(() => {
@@ -55,6 +55,9 @@ export default function RancidTomatillosProject() {
                 <LabelCard className={styles.card} text='REST' id='8' />
               </div>
             </div>
+          </div>
+          <div className={styles['image-container']}>
+            <img className={styles['project-image']} src={ImgSmall} />
           </div>
           <div className={styles['image-container']}>
               {

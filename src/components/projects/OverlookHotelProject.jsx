@@ -11,10 +11,10 @@ export default function OverLookHotelProject() {
 
   useEffect(() => {
     const img = new Image();
+    img.src = Img;
     img.onload = () => {
       setImageLoaded(true);
     }
-    img.src = Img;
   }, [Img])
 
   useEffect(() => {
