@@ -57,9 +57,6 @@ export default function RancidTomatillosProject() {
             </div>
           </div>
           <div className={styles['image-container']}>
-            <img className={styles['project-image']} src={ImgSmall} />
-          </div>
-          <div className={styles['image-container']}>
               {
                 !imageLoaded &&
                 <img className={styles['project-image']} src={ImgSmall} />
