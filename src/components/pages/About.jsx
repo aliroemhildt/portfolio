@@ -66,11 +66,11 @@ export default function About() {
           </div>
           <div className={styles['background-container']}>
                 <p className={styles['body-text']}>
-                  My development journey began in 2021 at Turing School of Software and Design, where I spent seven months fully immersed in learning the foundations of frontend development and coding best practices. Most recently, I worked as a fullstack developer in the consulting industry where I gained experience working all across the stack. My projects included things like migrating REST APIs to GraphQL, building a React frontend for an OpenAI-powered chatbot, and leading the quality engineering on a greenfield government portal.
+                  My development journey began in 2021 at Turing School of Software and Design, where I spent seven months fully immersed in learning the foundations of frontend development and coding best practices. Most recently, I worked as a fullstack developer in the consulting industry where I gained experience working all across the stack. My projects included things like migrating REST APIs to GraphQL, building a React frontend for an OpenAI-powered chatbot, and taking the lead on quality engineering planning and execution.
                 </p>
                 <br />
                 <p className={styles['body-text']}>
-                  Currently, my focus is back on frontend development and I’m looking for my next opportunity to join a collaborative team where I can contribute to building beautiful, functional, and inclusive digital experiences. In the meantime, I’m spending my time expanding on my React skills, with goals to add Angular, accessibility, and mobile development to my toolbelt. I’m curious, driven, and always looking to learn something new.
+                  Currently, my focus is back on frontend development and I’m looking for my next opportunity to join a collaborative team where I can contribute to building beautiful, functional, and inclusive digital experiences. In the meantime, I’m spending my time expanding on my React skills, with goals to add Angular and mobile development to my toolbelt. I’m curious, driven, and always looking to learn something new.
                 </p>
                 <br/>
                 <p className={styles['body-text']}>

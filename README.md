@@ -1,3 +1,5 @@
 # Portfolio
 
-A website built with React + Vite, React Router, Sass, and deployed with Netlify.
+My professional portfolio website.
+
+Built with React + Vite, React Router, Sass, and deployed with Netlify.
